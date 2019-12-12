@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 import Head from 'next/head';
 
-const index = () => {
+const index = (props) => {
     return(
         <Layout>
             <Head>

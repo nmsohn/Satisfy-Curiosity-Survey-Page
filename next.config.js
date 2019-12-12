@@ -1,8 +1,23 @@
 const withLess = require('@zeit/next-less');
 const withTypescript = require('@zeit/next-typescript');
+const fs = require('fs');
+const path = require('path');
+
+const themeVariables = lessToJS(
+  fs.readFileSync(path.resolve(__dirname, './assets/antd-custom.less'), 'utf8')
+)
 
 if (typeof require !== 'undefined') {
   require.extensions['.less'] = file => {}
+}
+
+module.exports = () => {
+  return withLess({
+    lessLoaderOptions: {
+      javascriptEnabled: true,
+      modifyVars: themeVariables // make your antd custom effective
+    }
+  })
 }
 
 // module.exports = withTypescript(withLess({

@@ -4,6 +4,7 @@ import NProgress from 'nprogress';
 import Router from 'next/router';
 import Helmet from 'react-helmet';
 import moment from 'moment';
+import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import '../styles/index.less';
