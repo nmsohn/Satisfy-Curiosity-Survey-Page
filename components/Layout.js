@@ -1,10 +1,14 @@
 import Header from './Header';
 import styled from 'styled-components';
+import NavBar from './NavBar';
 
-const Layout = ({children}) => (
-    <div>
+const Layout = props => (
+    <div className="layout">
         <Header/>
-        {children}
+        <NavBar/>
+        <div className="content">
+            {props.children}
+        </div>
     </div>
 );
 
