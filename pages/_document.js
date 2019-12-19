@@ -1,12 +1,35 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 import flush from 'styled-jsx/server'
+import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
-    static async getInitialProps({renderPage}) {
-        const {html, head} = renderPage();
-        const styles = flush();
+    static async getInitialProps(ctx) {
+        // const {html, head} = renderPage();
+        // const styles = flush();
 
-        return {html, head, styles};
+        // return {html, head, styles};
+        const sheet = new ServerStyleSheet()
+        const originalRenderPage = ctx.renderPage
+
+        try {
+        ctx.renderPage = () =>
+            originalRenderPage({
+            enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+            })
+
+        const initialProps = await Document.getInitialProps(ctx)
+        return {
+            ...initialProps,
+            styles: (
+            <>
+                {initialProps.styles}
+                {sheet.getStyleElement()}
+            </>
+            ),
+        }
+        } finally {
+            sheet.seal()
+        }
     }
 
     render () {

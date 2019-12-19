@@ -7,7 +7,14 @@ import moment from 'moment';
 import styled from 'styled-components';
 import { Layout } from "antd";
 const { Footer } = Layout;
-// import Layout from '../components/Layout';
+import { ThemeProvider } from 'styled-components'
+
+const theme = {
+    colors: {
+        primary_blue: '#0070f3',
+        primary_white: '#F0F2F5'
+      },
+}
 
 moment.locale('en');
 
@@ -22,7 +29,9 @@ export default class RootApp extends App {
             <Container>
                 <Helmet title="LAH" />
                 <Layout {...other} {...this.state}>
-                    <Component {...other} {...this.state} />
+                    <ThemeProvider theme={theme}>
+                        <Component {...other} {...this.state} />
+                    </ThemeProvider>
                 </Layout>
             </Container>
         );
