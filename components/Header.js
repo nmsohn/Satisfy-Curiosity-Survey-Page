@@ -5,7 +5,7 @@ const Header = Layout
 const StyledHeader = styled(Header)`
 {
     backgroundColor: ${({ theme }) => theme.colors.primary};
-    marginBottom: "25px;
+    marginBottom: 25px;
 }
 `
 
