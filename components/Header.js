@@ -1,48 +1,43 @@
-import { Layout, Row, Col } from 'antd'
-import styled from 'styled-components'
-const Header = Layout
+import { Layout, Row, Col } from "antd";
+import styled from "styled-components";
+const Header = Layout;
+import { theme } from "../assets/theme";
 
 const StyledHeader = styled(Header)`
-{
-    backgroundColor: ${({ theme }) => theme.colors.primary};
-    marginBottom: 25px;
-}
-`
+	 {
+		backgroundcolor: ${({ theme }) => theme.colors.primary_white};
+		marginbottom: 25px;
+	}
+`;
 
 const RightCol = styled(Col)`
-{
-    textAlign: "right";
-}
-`
+	 {
+		textalign: "right";
+	}
+`;
 
 const LeftCol = styled(Col)`
-{
-    textAlign: "left";
-}
-`
+	 {
+		textalign: "left";
+	}
+`;
 
 const CenterCol = styled(Col)`
-{
-    textAlign: "center";
-    fontWeight: 600;
-    textTransform: "uppercase";
-}
-`
+	 {
+		textalign: "center";
+		fontweight: 600;
+		texttransform: "uppercase";
+	}
+`;
 
 export default ({ centerColumn, rightColumn, leftColumn }) => {
-    return (
-            <StyledHeader theme="dark" className="header">
-                <Row>
-                    <LeftCol span={6}>
-                        {leftColumn}
-                    </LeftCol>
-                    <CenterCol span={12}>
-                        {centerColumn}
-                    </CenterCol>
-                    <RightCol span={6}>
-                        {rightColumn}
-                    </RightCol>
-                </Row>
-            </StyledHeader>
-    );
+	return (
+		<StyledHeader theme="dark" className="header">
+			<Row>
+				<LeftCol span={6}>{leftColumn}</LeftCol>
+				<CenterCol span={12}>{centerColumn}</CenterCol>
+				<RightCol span={6}>{rightColumn}</RightCol>
+			</Row>
+		</StyledHeader>
+	);
 };
