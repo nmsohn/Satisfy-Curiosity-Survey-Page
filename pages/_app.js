@@ -6,6 +6,7 @@ import moment from "moment";
 import { Layout } from "antd";
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import theme from '../assets/theme';
+import Container from '../components/Container'
 
 moment.locale("en");
 
@@ -29,7 +30,9 @@ export default class RootApp extends App {
 		return (
 			<Layout>
 				<ThemeProvider theme={theme}>
-					<Component {...pageProps} {...this.state}/>
+					<Container>
+						<Component {...pageProps} {...this.state}/>
+					</Container>
 				</ThemeProvider>
 			</Layout>
 		);

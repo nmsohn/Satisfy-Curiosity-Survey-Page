@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { Layout } from "antd";
-import Typewriter from 'typewriter-effect';
+import { Layout } from "antd"
+import Typewriter from 'typewriter-effect'
 
-const Section = Layout;
+const Section = Layout
 
 export default class Hero extends Component {
 	render() {

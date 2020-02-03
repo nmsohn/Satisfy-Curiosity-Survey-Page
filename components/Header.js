@@ -1,11 +1,11 @@
 import { Layout, Row, Col } from "antd";
-import styled, { withProps, withTheme } from "styled-components";
+import styled from "styled-components";
 import { theme } from "styled-tools";
 const Header = Layout;
 
 const StyledHeader = styled(Header)`
 	 {
-		backgroundcolor: ${theme("colors", "primary_white")};
+		backgroundcolor: ${theme("colors.primary", "white")};
 		marginbottom: 25px;
 	}
 `;
