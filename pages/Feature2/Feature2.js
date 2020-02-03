@@ -5,7 +5,7 @@ import Headline from '../../components/Headline'
 
 const Section = Layout;
 
-export default class Team extends Component {
+export default class Feature2 extends Component {
 	static propTypes = {
 		prop: PropTypes
 	}
