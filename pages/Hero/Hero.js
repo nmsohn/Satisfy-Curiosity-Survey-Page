@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { Layout, Row } from "antd";
+import { Layout } from "antd";
 import Typewriter from 'typewriter-effect';
 
 const Section = Layout;
@@ -12,9 +12,7 @@ export default class Hero extends Component {
 
 	render() {
 		return (
-			<section className="section-hero">
-				<Layout>
-					<Row>
+			<Section className="section-hero">
 					<h2>
 						<span>Discover local</span>
 						<Typewriter
@@ -30,9 +28,7 @@ export default class Hero extends Component {
 						/>
 						<span>today!</span>
 					</h2>
-					</Row>
-				</Layout>
-			</section>
+			</Section>
 		)
 	}
 }
