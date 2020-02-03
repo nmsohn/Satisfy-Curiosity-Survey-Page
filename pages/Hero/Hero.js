@@ -6,10 +6,6 @@ import Typewriter from 'typewriter-effect';
 const Section = Layout;
 
 export default class Hero extends Component {
-	static propTypes = {
-		prop: PropTypes
-	}
-
 	render() {
 		return (
 			<Section className="section-hero">
@@ -18,10 +14,11 @@ export default class Hero extends Component {
 						<Typewriter
 						onInit={(typewriter) => {
 							typewriter.typeString('lessons')
-							.pauseFor(2500)
+							.pauseFor(1500)
 							.deleteAll()
 							.typeString('classes')
-							.pauseFor(2500)
+							.pauseFor(1500)
+							.deleteAll()
 							.typeString('events')
 							.start();
 						}}

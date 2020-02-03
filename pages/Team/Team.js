@@ -6,10 +6,6 @@ import Headline from '../../components/Headline'
 const Section = Layout;
 
 export default class Team extends Component {
-	static propTypes = {
-		prop: PropTypes
-	}
-
 	render() {
 		const title = "Feature2";
 		const description = "feature2 description";

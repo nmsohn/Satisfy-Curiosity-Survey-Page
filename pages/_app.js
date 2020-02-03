@@ -2,14 +2,10 @@ import App, { Container } from "next/app";
 import React from "react";
 import NProgress from "nprogress";
 import Router from "next/router";
-import Helmet from "react-helmet";
 import moment from "moment";
-import styled from "styled-components";
 import { Layout } from "antd";
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import theme from '../../assets/theme';
-
-const { Footer } = Layout;
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+import theme from '../assets/theme';
 
 moment.locale("en");
 
@@ -18,18 +14,24 @@ Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
 export default class RootApp extends App {
+	static async getInitialProps ({ Component, ctx }) {
+		let pageProps = {}
+	
+		if (Component.getInitialProps) {
+		  pageProps = await Component.getInitialProps(ctx)
+		}
+	
+		return { pageProps }
+	  }
+	
 	render() {
-		const { Component, ...other } = this.props;
+		const { Component, pageProps } = this.props;
 		return (
-			<Container>
-				<Helmet title="LAH" />
-				//TODO: theme 작성하기
+			<Layout>
 				<ThemeProvider theme={theme}>
-					<Layout {...other} {...this.state}>
-						<Component {...other} {...this.state} />
-					</Layout>
+					<Component {...pageProps} {...this.state}/>
 				</ThemeProvider>
-			</Container>
+			</Layout>
 		);
 	}
 }

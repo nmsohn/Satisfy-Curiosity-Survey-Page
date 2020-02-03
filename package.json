@@ -28,6 +28,7 @@
     "react-helmet": "^5.2.1",
     "recursive-copy": "^2.0.10",
     "styled-components": "^4.4.1",
+    "styled-tools": "^1.7.1",
     "typewriter-effect": "^2.12.2"
   },
   "devDependencies": {
