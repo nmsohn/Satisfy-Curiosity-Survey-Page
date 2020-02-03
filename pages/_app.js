@@ -6,8 +6,10 @@ import Helmet from "react-helmet";
 import moment from "moment";
 import styled from "styled-components";
 import { Layout } from "antd";
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import theme from '../../assets/theme';
+
 const { Footer } = Layout;
-import { ThemeProvider, createGlobal } from "styled-components";
 
 moment.locale("en");
 
