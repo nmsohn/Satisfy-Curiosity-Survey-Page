@@ -10,9 +10,14 @@ export default class Headline extends Component {
 	render() {
 		return (
 			<Row className="headline">
-				<h2 className="heading">{/*header prop*/}</h2>
-				<p className="paragraph">{/*description prop*/}</p>
+				<h2 className="heading">{this.props.heading}</h2>
+				<p className="paragraph">{this.props.description}</p>
 			</Row>
 		)
 	}
+}
+
+Headline.propTypes = {
+	heading: PropTypes.string,
+	description: PropTypes.string
 }
