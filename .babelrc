@@ -6,7 +6,8 @@
         "libraryName": "antd",
         "libraryDirectory":"lib",
         "style": "less"
-      }
-    ]
-  ]
+      },
+    ],
+  ],
+  "ignore": ["node_modules"],
 }

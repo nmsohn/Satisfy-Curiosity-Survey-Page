@@ -7,7 +7,7 @@ import moment from "moment";
 import styled from "styled-components";
 import { Layout } from "antd";
 const { Footer } = Layout;
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider, createGlobal } from "styled-components";
 
 moment.locale("en");
 
@@ -21,6 +21,7 @@ export default class RootApp extends App {
 		return (
 			<Container>
 				<Helmet title="LAH" />
+				//TODO: theme 작성하기
 				<ThemeProvider theme={theme}>
 					<Layout {...other} {...this.state}>
 						<Component {...other} {...this.state} />

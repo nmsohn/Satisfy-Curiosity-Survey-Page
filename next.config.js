@@ -11,7 +11,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const FilterWarningsPlugin = require("webpack-filter-warnings-plugin");
 const withAntd = require("./next-antd.config");
 
-const themeVariables = lessToJS(fs.readFileSync(path.resolve(__dirname, "./assets/antd-custom.less"), "utf8"));
+const themeVariables = lessToJS(fs.readFileSync(path.resolve(__dirname, "./assets/less/antd-custom.less"), "utf8"));
 
 // const cssConfig = {
 // 	cssLoaderOptions: {
