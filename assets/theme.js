@@ -1,7 +1,9 @@
 const colors = {
 	primary: {
 		blue: "#0070f3",
-		white: "#0070f3"
+		white: "#0070f3",
+		black: "#333",
+		gray: "#495460"
 	}
 };
 
@@ -9,13 +11,13 @@ const fontSizes = ["1.2rem", "1.4rem", "1.6rem", "1.8rem", "2.4rem", "2.8rem", "
 const space = ["0", ".4rem", ".8rem", "1.2rem", "1.6rem", "2.0rem", "3.2rem", "4.8rem", "6.4rem", "9.6rem"];
 
 const mediaSizes = {
-	mobileS: '320px',
-	mobileM: '375px',
-	mobileL: '425px',
-	tablet: '768px',
-	laptop: '1024px',
-	laptopL: '1440px',
-	desktop: '2560px'
+	mobileS: "320px",
+	mobileM: "375px",
+	mobileL: "425px",
+	tablet: "768px",
+	laptop: "1024px",
+	laptopL: "1440px",
+	desktop: "2560px"
 };
 
 const device = {
@@ -27,7 +29,7 @@ const device = {
 	laptopL: `(min-width: ${mediaSizes.laptopL})`,
 	desktop: `(min-width: ${mediaSizes.desktop})`,
 	desktopL: `(min-width: ${mediaSizes.desktop})`
-  };
+};
 
 const theme = {
 	colors,
@@ -35,6 +37,6 @@ const theme = {
 	mediaSizes,
 	device,
 	space
-}
-  
+};
+
 export default theme;

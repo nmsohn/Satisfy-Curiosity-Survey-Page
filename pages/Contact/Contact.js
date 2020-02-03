@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { Layout } from "antd"
-import Headline from '../../components/Headline'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { Layout } from "antd";
+import Headline from "../../components/Headline";
 
 const Section = Layout;
 
@@ -14,6 +14,6 @@ export default class Contact extends Component {
 			<Section className="section-feature2">
 				<Headline title={title} description={description}></Headline>
 			</Section>
-		)
+		);
 	}
 }
