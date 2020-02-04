@@ -4,13 +4,15 @@ import reset from "styled-reset";
 
 const GlobalStyle = theme => createGlobalStyle`
 	${reset}
+	html {
+		background: #000;
+	},
 	body {
 		margin: 0;
 		min-height: 100%;
 		font-size: 14px;
 		line-height: 20px;
 		color: ${theme.colors.primary.black};
-		background: #000;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 1em;
 		line-height: 20px;

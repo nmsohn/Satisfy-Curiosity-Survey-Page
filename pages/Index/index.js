@@ -3,8 +3,12 @@ import { Layout, Row, AutoComplete } from "antd";
 import Header from "../../components/Header";
 import Hero from "../Hero/Hero";
 import { Container } from "../../components/StyledComponents";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const { Content } = Layout;
+
+AOS.init();
 
 export default ({ data }) => (
 	<Container>

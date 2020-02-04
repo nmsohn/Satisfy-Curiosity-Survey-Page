@@ -44,7 +44,7 @@ const Section = styled(Layout)`
 		padding-right: 32px;
 		padding-left: 32px;
 		-webkit-box-align: center;
-		background-image: linear-gradient(180deg, #000, rgba(0, 0, 0, 0.89) 61%, transparent);
+		${"" /* background-image: linear-gradient(180deg, #000, rgba(0, 0, 0, 0.89) 61%, transparent); */}
 	}
 `;
 
@@ -55,7 +55,7 @@ export default class Hero extends Component {
 				<Title>
 					<span>Discover Local</span>
 					<Typewriter
-						onInit={typewriter => {
+						onInit={(typewriter) => {
 							typewriter
 								.typeString("Lessons")
 								.pauseFor(1500)
