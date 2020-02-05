@@ -25,8 +25,8 @@ const lessConfig = {
 	}
 };
 const nextConfig = {
-	distDir: "_next",
-	webpack: config => {
+	distDir: ".next",
+	webpack: (config) => {
 		config.plugins.push(
 			new FilterWarningsPlugin({
 				// ignore ANTD chunk styles [mini-css-extract-plugin] warning
@@ -38,7 +38,7 @@ const nextConfig = {
 };
 
 if (typeof require !== "undefined") {
-	require.extensions[".less"] = file => {};
+	require.extensions[".less"] = (file) => {};
 }
 
-module.exports = withPlugins([[withImages], [withAntd, lessConfig], nextConfig]);
+module.exports = withPlugins([ [ withImages ], [ withAntd, lessConfig ], nextConfig ]);
