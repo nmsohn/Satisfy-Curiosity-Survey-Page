@@ -20,11 +20,11 @@ const Title = styled.h2`
 		-webkit-flex: 0 auto;
 		-ms-flex: 0 auto;
 		flex: 0 auto;
-		font-size: 68px;
+		font-size: 48px;
 		line-height: 60px;
 		font-weight: 300;
 		text-align: center;
-		color: #fff;
+		color: #8d94eb;
 	}
 `;
 
@@ -55,7 +55,7 @@ export default class Hero extends Component {
 				<Title>
 					<span>Discover Local</span>
 					<Typewriter
-						onInit={typewriter => {
+						onInit={(typewriter) => {
 							typewriter
 								.typeString("Lessons")
 								.pauseFor(1500)
