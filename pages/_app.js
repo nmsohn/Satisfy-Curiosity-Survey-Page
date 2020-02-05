@@ -25,13 +25,13 @@ export default class RootApp extends App {
 
 	render() {
 		const { Component, pageProps } = this.props;
-		GlobalStyle(theme);
 		return (
-			<Layout>
-				<ThemeProvider theme={theme}>
+			<ThemeProvider theme={theme}>
+				<>
+					<GlobalStyle />
 					<Component {...pageProps} {...this.state} />
-				</ThemeProvider>
-			</Layout>
+				</>
+			</ThemeProvider>
 		);
 	}
 }

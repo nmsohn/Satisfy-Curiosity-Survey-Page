@@ -3,7 +3,8 @@ const colors = {
 		blue: "#0070f3",
 		white: "#0070f3",
 		black: "#333",
-		gray: "#495460"
+		gray: "#495460",
+		white: "#fff"
 	}
 };
 

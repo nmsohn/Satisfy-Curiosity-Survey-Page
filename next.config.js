@@ -25,6 +25,7 @@ const lessConfig = {
 	}
 };
 const nextConfig = {
+	distDir: "_next",
 	webpack: config => {
 		config.plugins.push(
 			new FilterWarningsPlugin({

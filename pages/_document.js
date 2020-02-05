@@ -43,7 +43,7 @@ export default class MyDocument extends Document {
 					/>
 					<meta name="description" content="LAH" />
 					<meta name="keywords" content="jobs,nz,odd jobs,errands,temp jobs, one off jobs" />
-					<link rel="manifest" href="public/static/manifest.json" />
+					<link rel="manifest" href="/manifest.json" />
 					<link href="https://cdnjs.cloudflare.com/ajax/libs/antd/3.8.1/antd.min.css" rel="stylesheet" />
 					{/* <link rel="shortcut icon" href="/static/favicon.ico" /> */}
 					<style>{`body { margin: 0 } /* custom! */`}</style>

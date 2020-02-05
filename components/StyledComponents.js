@@ -3,6 +3,8 @@ import { theme } from "styled-tools";
 
 export const Container = styled.div`
   margin: auto;
+  color: ${theme("colors.primary", "white")}
+  backgroundcolor: ${theme("colors.primary", "black")};
   @media ${theme("device", "laptop")} {  // -> "@media (min-width: ${theme(
 	"size",
 	"laptop"

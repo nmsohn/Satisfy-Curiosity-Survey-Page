@@ -5,9 +5,9 @@ import styled from "styled-components";
 
 const Title = styled.h2`
 	 {
+		@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 		display: block;
-		margin-top: 0px;
-		margin-bottom: 0px;
+		margin: 0 auto;
 		-webkit-box-pack: center;
 		-webkit-justify-content: center;
 		-ms-flex-pack: center;
@@ -20,7 +20,7 @@ const Title = styled.h2`
 		-webkit-flex: 0 auto;
 		-ms-flex: 0 auto;
 		flex: 0 auto;
-		font-size: 48px;
+		font-size: 68px;
 		line-height: 60px;
 		font-weight: 300;
 		text-align: center;
@@ -28,7 +28,7 @@ const Title = styled.h2`
 	}
 `;
 
-const Section = styled(Layout)`
+const Section = styled.div`
 	 {
 		display: flex;
 		position: absolute;
@@ -38,13 +38,13 @@ const Section = styled(Layout)`
 		right: 0%;
 		bottom: auto;
 		z-index: 2;
-		min-height: 50vh;
+		min-height: 80vh;
 		align-items: center;
 		display: flex;
 		padding-right: 32px;
 		padding-left: 32px;
 		-webkit-box-align: center;
-		${"" /* background-image: linear-gradient(180deg, #000, rgba(0, 0, 0, 0.89) 61%, transparent); */}
+		background-image: linear-gradient(180deg, #000, rgba(0, 0, 0, 0.89) 61%, transparent);
 	}
 `;
 
@@ -55,7 +55,7 @@ export default class Hero extends Component {
 				<Title>
 					<span>Discover Local</span>
 					<Typewriter
-						onInit={(typewriter) => {
+						onInit={typewriter => {
 							typewriter
 								.typeString("Lessons")
 								.pauseFor(1500)
