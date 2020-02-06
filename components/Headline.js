@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Layout, Row } from "antd";
+import { Row } from "antd";
+import styled from "styled-components";
 
 export default class Headline extends Component {
 	static propTypes = {
@@ -8,10 +9,43 @@ export default class Headline extends Component {
 	};
 
 	render() {
+		const HeadingContainer = styled.div``;
+
+		const Heading = styled.h2`
+			 {
+				position: static;
+				left: 0%;
+				top: 20%;
+				right: 0%;
+				bottom: auto;
+				display: inline-block;
+				height: auto;
+				margin-top: 0px;
+				margin-right: 10px;
+				margin-bottom: 0px;
+				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+					"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+				color: #fff;
+				font-size: 96px;
+				line-height: 86px;
+				font-weight: 300;
+				text-align: left;
+				text-decoration: none;
+			}
+		`;
+		const ParagraphContainer = styled.div``;
+		const Paragraph = styled.p``;
+		const heading = this.props.heading;
+		const paragraph = this.props.paragraph;
+
 		return (
 			<Row className="headline">
-				<h2 className="heading">{this.props.heading}</h2>
-				<p className="paragraph">{this.props.description}</p>
+				<HeadingContainer>
+					<Heading className="heading">{heading}</Heading>
+				</HeadingContainer>
+				<ParagraphContainer>
+					<Paragraph className="paragraph">{paragraph}</Paragraph>
+				</ParagraphContainer>
 			</Row>
 		);
 	}

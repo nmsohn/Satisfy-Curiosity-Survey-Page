@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Layout } from "antd";
 import Typewriter from "typewriter-effect";
 import styled from "styled-components";
+import { Section } from "../../components/StyledComponents";
 
 const Title = styled.h2`
 	 {
@@ -28,26 +29,6 @@ const Title = styled.h2`
 	}
 `;
 
-const Section = styled.div`
-	 {
-		display: flex;
-		position: absolute;
-		margin-top: 72px;
-		left: 0%;
-		top: 0%;
-		right: 0%;
-		bottom: auto;
-		z-index: 2;
-		min-height: 80vh;
-		align-items: center;
-		display: flex;
-		padding-right: 32px;
-		padding-left: 32px;
-		-webkit-box-align: center;
-		background-image: linear-gradient(180deg, #0f0e19, #0f0e19 80%, #484754);
-	}
-`;
-
 export default class Hero extends Component {
 	render() {
 		return (
@@ -55,7 +36,7 @@ export default class Hero extends Component {
 				<Title>
 					<span>Discover Local</span>
 					<Typewriter
-						onInit={(typewriter) => {
+						onInit={typewriter => {
 							typewriter
 								.typeString("Lessons")
 								.pauseFor(1500)

@@ -29,6 +29,8 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-reveal": "^1.2.2",
+    "react-scroll-parallax": "^2.3.1",
+    "react-spring": "^8.0.27",
     "recursive-copy": "^2.0.10",
     "scrollmagic": "^2.0.7",
     "styled-components": "^4.4.1",

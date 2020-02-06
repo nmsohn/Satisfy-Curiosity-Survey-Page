@@ -7,6 +7,7 @@ import { Layout } from "antd";
 import { ThemeProvider } from "styled-components";
 import theme from "../assets/theme";
 import GlobalStyle from "../assets/GlobalStyles";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 moment.locale("en");
 
@@ -29,7 +30,9 @@ export default class RootApp extends App {
 			<ThemeProvider theme={theme}>
 				<>
 					<GlobalStyle />
-					<Component {...pageProps} {...this.state} />
+					<ParallaxProvider>
+						<Component {...pageProps} {...this.state} />
+					</ParallaxProvider>
 				</>
 			</ThemeProvider>
 		);
