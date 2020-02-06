@@ -3,7 +3,7 @@ import { Layout, Row, AutoComplete } from "antd";
 import Header from "../../components/Header";
 import Hero from "../Hero/Hero";
 import { Container } from "../../components/StyledComponents";
-import Feature from "../Hero/Hero";
+import Feature from "../Feature/Feature";
 
 const { Content } = Layout;
 

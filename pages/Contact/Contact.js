@@ -12,7 +12,7 @@ export default class Contact extends Component {
 
 		return (
 			<Section className="section-feature2">
-				<Headline title={title} description={description}></Headline>
+				<Headline heading={title} paragraph={description}></Headline>
 			</Section>
 		);
 	}

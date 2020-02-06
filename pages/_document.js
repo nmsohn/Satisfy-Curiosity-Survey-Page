@@ -45,6 +45,11 @@ export default class MyDocument extends Document {
 					<meta name="keywords" content="jobs,nz,odd jobs,errands,temp jobs, one off jobs" />
 					<link rel="manifest" href="/manifest.json" />
 					<link href="https://cdnjs.cloudflare.com/ajax/libs/antd/3.8.1/antd.min.css" rel="stylesheet" />
+					<link
+						rel="stylesheet"
+						href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+					/>
+					<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 					{/* <link rel="shortcut icon" href="/static/favicon.ico" /> */}
 					<style>{`body { margin: 0 } /* custom! */`}</style>
 					{/* <title>LAH - Help your neighbours</title> */}
@@ -52,6 +57,8 @@ export default class MyDocument extends Document {
 				<body>
 					<Main />
 					<NextScript />
+					<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+					<script> AOS.init();</script>
 				</body>
 			</html>
 		);

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Row } from "antd";
 import styled from "styled-components";
+import { Parallax } from "react-scroll-parallax";
 
 export default class Headline extends Component {
 	static propTypes = {
@@ -41,10 +42,14 @@ export default class Headline extends Component {
 		return (
 			<Row className="headline">
 				<HeadingContainer>
-					<Heading className="heading">{heading}</Heading>
+					<Heading className="heading" data-aos="fade-up">
+						{heading}
+					</Heading>
 				</HeadingContainer>
 				<ParagraphContainer>
-					<Paragraph className="paragraph">{paragraph}</Paragraph>
+					<Paragraph className="paragraph" data-aos="fade-up">
+						{paragraph}
+					</Paragraph>
 				</ParagraphContainer>
 			</Row>
 		);
