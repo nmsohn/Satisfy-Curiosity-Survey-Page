@@ -5,15 +5,15 @@ const Header = Layout;
 
 const StyledHeader = styled(Header)`
 	 {
-		backgroundcolor: ${theme("colors.primary", "black")};
-		marginbottom: 25px;
+		color: ${theme("colors.primary", "black")};
+		margin-bottom: 25px;
 		position: sticky;
 		top: 0px;
 		z-index: 99998;
 		display: flex;
 		overflow: visible;
 		height: 72px;
-		background: #000;
+		background: ${theme("colors.primary", "white")};
 	}
 `;
 

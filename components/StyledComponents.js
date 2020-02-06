@@ -20,9 +20,8 @@ export const Container = styled.div`
 export const Section = styled.div`
 	 {
 		display: flex;
-		position: absolute;
-		margin-top: 72px;
-		left: 0%;
+		position: relative;
+		${"" /* margin-top: 72px; */} left: 0%;
 		top: 0%;
 		right: 0%;
 		bottom: auto;

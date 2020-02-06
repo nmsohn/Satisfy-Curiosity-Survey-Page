@@ -36,7 +36,10 @@ export default class Hero extends Component {
 				<Title>
 					<span>Discover Local</span>
 					<Typewriter
-						onInit={typewriter => {
+						options={{
+							loop: true
+						}}
+						onInit={(typewriter) => {
 							typewriter
 								.typeString("Lessons")
 								.pauseFor(1500)
@@ -45,6 +48,7 @@ export default class Hero extends Component {
 								.pauseFor(1500)
 								.deleteAll()
 								.typeString("Events")
+								.pauseFor(1500)
 								.start();
 						}}
 					/>
