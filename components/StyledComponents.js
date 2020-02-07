@@ -3,8 +3,8 @@ import { theme } from "styled-tools";
 
 export const Container = styled.div`
   margin: auto;
-  color: ${theme("colors.primary", "white")}
-  backgroundcolor: ${theme("colors.primary", "black")};
+  color: #fff;
+  background-color: #000;
   @media ${theme("device", "laptop")} {  // -> "@media (min-width: ${theme(
 	"size",
 	"laptop"
@@ -21,7 +21,7 @@ export const Section = styled.div`
 	 {
 		display: flex;
 		position: relative;
-		${"" /* margin-top: 72px; */} left: 0%;
+		left: 0%;
 		top: 0%;
 		right: 0%;
 		bottom: auto;
@@ -32,6 +32,9 @@ export const Section = styled.div`
 		padding-right: 32px;
 		padding-left: 32px;
 		-webkit-box-align: center;
-		background-image: linear-gradient(180deg, #0f0e19, #0f0e19 80%, #484754);
+		background-color: #000;
+		color: #fff;
+		${"" /* background-image: linear-gradient(180deg, #0f0e19, #0f0e19 80%, #484754); */};
+		${"" /* margin-top: 72px; */};
 	}
 `;

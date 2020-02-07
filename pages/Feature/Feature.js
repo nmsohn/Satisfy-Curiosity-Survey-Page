@@ -5,10 +5,10 @@ import { Section } from "../../components/StyledComponents";
 export default class Feature extends Component {
 	render() {
 		const title = "Feature";
-		const description = "feature description";
+		const content = "feature description";
 		return (
 			<Section className="section-feature">
-				<Headline heading={title} paragraph={description}></Headline>
+				<Headline heading={title} description={content} />
 			</Section>
 		);
 	}

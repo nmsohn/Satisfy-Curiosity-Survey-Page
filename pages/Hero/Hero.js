@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Layout } from "antd";
 import Typewriter from "typewriter-effect";
 import styled from "styled-components";
 import { Section } from "../../components/StyledComponents";

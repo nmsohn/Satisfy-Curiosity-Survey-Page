@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Row } from "antd";
+import { Row, Col } from "antd";
 import styled from "styled-components";
 import { Parallax } from "react-scroll-parallax";
 
@@ -34,24 +34,80 @@ export default class Headline extends Component {
 				text-decoration: none;
 			}
 		`;
-		const ParagraphContainer = styled.div``;
-		const Paragraph = styled.p``;
+		const ParagraphContainer = styled.div`
+			 {
+				font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+					'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+				line-height: 26px;
+				font-weight: 300;
+			}
+		`;
+		const Paragraph = styled.p`
+			margin-top: 24px;
+			margin-bottom: 0px;
+			padding-right: 24px;
+			padding-left: 0px;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+				'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+			color: #999;
+			font-size: 19px;
+			font-weight: 300;
+			text-align: left;
+			letter-spacing: 0.5px;
+		`;
 		const heading = this.props.heading;
-		const paragraph = this.props.paragraph;
+		const description = this.props.description;
+		const description2 = this.props.description2;
 
 		return (
-			<Row className="headline">
+			<div className="headline">
 				<HeadingContainer>
-					<Heading className="heading" data-aos="fade-up">
+					<Heading
+						className="heading"
+						data-aos="fade-up"
+						data-aos-offset="200"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+					>
 						{heading}
 					</Heading>
 				</HeadingContainer>
 				<ParagraphContainer>
-					<Paragraph className="paragraph" data-aos="fade-up">
-						{paragraph}
-					</Paragraph>
+					<Row>
+						<Col>
+							<Paragraph
+								className="description"
+								data-aos="fade-up"
+								data-aos-offset="200"
+								data-aos-delay="50"
+								data-aos-duration="1000"
+								data-aos-easing="ease-in-out"
+								data-aos-mirror="true"
+								data-aos-once="false"
+							>
+								{description}
+							</Paragraph>
+						</Col>
+						<Col>
+							<Paragraph
+								className="description2"
+								data-aos="fade-up"
+								data-aos-offset="200"
+								data-aos-delay="50"
+								data-aos-duration="1000"
+								data-aos-easing="ease-in-out"
+								data-aos-mirror="true"
+								data-aos-once="false"
+							>
+								{description2}
+							</Paragraph>
+						</Col>
+					</Row>
 				</ParagraphContainer>
-			</Row>
+			</div>
 		);
 	}
 }

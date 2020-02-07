@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import Hero from "../Hero/Hero";
 import { Container } from "../../components/StyledComponents";
 import Feature from "../Feature/Feature";
+import Feature2 from "../Feature2/Feature2";
 
 const { Content } = Layout;
 
@@ -13,6 +14,7 @@ export default ({ data }) => (
 		<Content>
 			<Hero />
 			<Feature />
+			<Feature2 />
 		</Content>
 	</Container>
 );
