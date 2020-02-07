@@ -1,11 +1,30 @@
 import React, { Component } from "react";
 import Typewriter from "typewriter-effect";
 import styled from "styled-components";
-import { Section } from "../../components/StyledComponents";
+
+const Section = styled.div`
+	 {
+		display: flex;
+		position: relative;
+		left: 0%;
+		top: 0%;
+		right: 0%;
+		bottom: auto;
+		z-index: 2;
+		min-height: 80vh;
+		align-items: center;
+		display: flex;
+		padding-right: 32px;
+		padding-left: 32px;
+		-webkit-box-align: center;
+		background-color: #000;
+		color: #fff;
+	}
+`;
+
 
 const Title = styled.h2`
 	 {
-		@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 		display: block;
 		margin: 0 auto;
 		-webkit-box-pack: center;
@@ -20,20 +39,32 @@ const Title = styled.h2`
 		-webkit-flex: 0 auto;
 		-ms-flex: 0 auto;
 		flex: 0 auto;
-		font-size: 48px;
-		line-height: 60px;
+		font-size: 5em;
+		text-transform: uppercase;
+		line-height: 80px;
 		font-weight: 300;
 		text-align: center;
-		color: #a4b2cf;
+		color: #17ffa6;
+		font-family: 'Anton';
 	}
 `;
+
+const TopTitle = styled.span`
+{
+	color: #28b4d7;
+}`;
+
+const BottomTitle = styled.span`
+{
+	color: #c23369;
+}`;
 
 export default class Hero extends Component {
 	render() {
 		return (
-			<Section className="section-hero">
+			<Section className="section-hero component first-component">
 				<Title>
-					<span>Discover Local</span>
+					<TopTitle>Discover Local</TopTitle>
 					<Typewriter
 						options={{
 							loop: true
@@ -51,7 +82,7 @@ export default class Hero extends Component {
 								.start();
 						}}
 					/>
-					<span>Today!</span>
+					<BottomTitle>Today!</BottomTitle>
 				</Title>
 			</Section>
 		);

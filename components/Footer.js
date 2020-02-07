@@ -23,9 +23,9 @@ const RightCol = styled(Col)`
 
 const CenterCol = styled(Col)`
 	 {
-		textalign: "center";
-		fontweight: 600;
-		texttransform: "uppercase";
+		text-align: "center";
+		font-weight: 600;
+		text-transform: "uppercase";
 	}
 `;
 

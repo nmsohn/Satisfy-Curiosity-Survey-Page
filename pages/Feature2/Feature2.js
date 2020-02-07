@@ -7,7 +7,7 @@ export default class Feature2 extends Component {
 		const title = "Feature2";
 		const content = "feature2 description";
 		return (
-			<Section className="section-feature">
+			<Section className="section-feature2 component third-component">
 				<Headline heading={title} description={content} />
 			</Section>
 		);

@@ -4,7 +4,6 @@ import { theme } from "styled-tools";
 
 const StyledHeader = styled.div`
 	 {
-		color: ${theme("colors.primary", "white")};
 		margin-bottom: 25px;
 		position: -webkit-sticky;
 		position: sticky;
@@ -21,15 +20,15 @@ const StyledHeader = styled.div`
 	}
 `;
 
-const RightCol = styled(Col)`
-	 {
-		text-align: right;
-	}
-`;
-
 const LeftCol = styled(Col)`
 	 {
 		text-align: left;
+		text-transform: uppercase;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		font-size: 20px;
+		font-weight: bold;
 	}
 `;
 
@@ -38,11 +37,31 @@ const CenterCol = styled(Col)`
 		text-align: center;
 		font-weight: 600;
 		text-transform: uppercase;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+`;
+
+const RightCol = styled(Col)`
+	 {
+		text-align: right;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		text-transform: uppercase;
 	}
 `;
 
 const NavBar = styled(Row)`
-background-image: linear-gradient(180deg, #000, transparent);
+	{
+		width: 100%;
+		background-image: linear-gradient(180deg, #000, transparent);
+		height: 72px;
+		padding-top: 0px;
+		padding-right: 12px;
+		padding-left: 12px;
+	}
 `;
 
 export default ({ centerColumn, rightColumn, leftColumn }) => {

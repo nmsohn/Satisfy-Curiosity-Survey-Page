@@ -10,13 +10,20 @@ export default class Headline extends Component {
 	};
 
 	render() {
+		const HeadLine = styled.div`
+		{
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 940px;
+			position: static;
+			display: block;
+		}`;
 		const HeadingContainer = styled.div``;
 
 		const Heading = styled.h2`
 			 {
 				position: static;
 				left: 0%;
-				top: 20%;
 				right: 0%;
 				bottom: auto;
 				display: inline-block;
@@ -24,8 +31,7 @@ export default class Headline extends Component {
 				margin-top: 0px;
 				margin-right: 10px;
 				margin-bottom: 0px;
-				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-					"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+				font-family: Anton;
 				color: #fff;
 				font-size: 96px;
 				line-height: 86px;
@@ -60,7 +66,7 @@ export default class Headline extends Component {
 		const description2 = this.props.description2;
 
 		return (
-			<div className="headline">
+			<HeadLine className="headline">
 				<HeadingContainer>
 					<Heading
 						className="heading"
@@ -69,7 +75,6 @@ export default class Headline extends Component {
 						data-aos-delay="50"
 						data-aos-duration="1000"
 						data-aos-easing="ease-in-out"
-						data-aos-mirror="true"
 						data-aos-once="false"
 					>
 						{heading}
@@ -85,7 +90,6 @@ export default class Headline extends Component {
 								data-aos-delay="50"
 								data-aos-duration="1000"
 								data-aos-easing="ease-in-out"
-								data-aos-mirror="true"
 								data-aos-once="false"
 							>
 								{description}
@@ -99,7 +103,6 @@ export default class Headline extends Component {
 								data-aos-delay="50"
 								data-aos-duration="1000"
 								data-aos-easing="ease-in-out"
-								data-aos-mirror="true"
 								data-aos-once="false"
 							>
 								{description2}
@@ -107,7 +110,7 @@ export default class Headline extends Component {
 						</Col>
 					</Row>
 				</ParagraphContainer>
-			</div>
+			</HeadLine>
 		);
 	}
 }
