@@ -8,6 +8,7 @@ import Feature2 from "../Feature2/Feature2";
 
 const { Content } = Layout;
 
+//TODO: 한 화면 단위 스크롤 적용하기
 export default ({ data }) => (
 	<Container className="container">
 		<Header leftColumn={<h4>Logo</h4>} centerColumn={<h4>Page Name</h4>} rightColumn={<h4>Menu</h4>} />
