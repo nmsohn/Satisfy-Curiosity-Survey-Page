@@ -9,6 +9,7 @@ import Team from "../Team/Team";
 import { FullPage, Slide } from 'react-full-page';
 import styled from "styled-components";
 import Footer from "../../components/Footer";
+import SocialHandle from "../../components/SocialHandle";
 
 const { Content } = Layout;
 
@@ -48,6 +49,6 @@ export default ({ data }) => (
 				</Slide>
 			</FullPage>
 		</Main>
-		<Footer/>
+		<Footer centerColumn={<SocialHandle />}/>
 	</Container>
 );

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Typewriter from "typewriter-effect";
 import styled from "styled-components";
+import SocialHandle from "../../components/SocialHandle";
 
 const Section = styled.div`
 	 {
@@ -84,6 +85,7 @@ export default class Hero extends Component {
 					/>
 					<BottomTitle>Today!</BottomTitle>
 				</Title>
+				<SocialHandle />
 			</Section>
 		);
 	}
