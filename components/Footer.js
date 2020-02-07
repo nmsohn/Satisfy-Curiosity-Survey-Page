@@ -4,7 +4,7 @@ const Footer = Layout;
 
 const StyledHeader = styled(Footer)`
 	 {
-		backgroundcolor: ${({ theme }) => theme.colors.primary};
+		backgroundcolor: #000;
 		margintop: 25px;
 	}
 `;

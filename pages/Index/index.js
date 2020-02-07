@@ -4,9 +4,11 @@ import Header from "../../components/Header";
 import Hero from "../Hero/Hero";
 import { Container } from "../../components/StyledComponents";
 import Feature from "../Feature/Feature";
-import Feature2 from "../Feature2/Feature2";
+import Contact from "../Contact/Contact";
+import Team from "../Team/Team";
 import { FullPage, Slide } from 'react-full-page';
 import styled from "styled-components";
+import Footer from "../../components/Footer";
 
 const { Content } = Layout;
 
@@ -27,10 +29,9 @@ const CallToAction = styled(Button)`
 	}
 `;
 
-//TODO: 한 화면 단위 스크롤 적용하기
 export default ({ data }) => (
 	<Container className="container">
-		<Header leftColumn={<Menu>SkillShareNZ</Menu>} rightColumn={<CallToAction size="large">Join Newsletter</CallToAction>} />
+		<Header leftColumn={<Menu>SkillShareNZ</Menu>} rightColumn={<CallToAction size="large">Contact Us</CallToAction>} />
 		<Main>
 			<FullPage>
 				<Slide>
@@ -40,12 +41,13 @@ export default ({ data }) => (
 					<Feature />
 				</Slide>
 				<Slide>
-					<Feature2 />
+					<Team />
 				</Slide>
 				<Slide>
-
+					<Contact />
 				</Slide>
 			</FullPage>
 		</Main>
+		<Footer/>
 	</Container>
 );

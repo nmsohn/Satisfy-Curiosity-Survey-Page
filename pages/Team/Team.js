@@ -1,17 +1,14 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Layout } from "antd";
 import Headline from "../../components/Headline";
-
-const Section = Layout;
+import { Section } from "../../components/StyledComponents";
 
 export default class Team extends Component {
 	render() {
-		const title = "Feature2";
-		const description = "feature2 description";
+		const title = "Team";
+		const description = "team description";
 
 		return (
-			<Section className="section-feature2">
+			<Section className="section-team component third-component">
 				<Headline heading={title} paragraph={description}></Headline>
 			</Section>
 		);
