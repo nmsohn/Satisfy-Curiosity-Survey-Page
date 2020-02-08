@@ -118,10 +118,18 @@ const Arrow = styled(KeyboardArrowDown)`
 		-webkit-flex: 0 auto;
 		-ms-flex: 0 auto;
 		flex: 0 auto;
+		animation: anim .35s ease-in alternate infinite;
+      
+		@keyframes anim {
+		  0% {
+			transform: translateY(0);
+		  }
+		  100% {
+			transform: translateY(10px);
+		  }
+		}
 	}
 `;
-
-const interp = i => r => `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`;
 
 export default class Hero extends Component {
 	render() {
@@ -152,7 +160,7 @@ export default class Hero extends Component {
 						</Title>
 					</TitleCol>
 					<Sub>Find a new hobby or build up your skills with us!</Sub>
-					<Arrow size={28} className="bounce" />
+					<Arrow size={30} />
 					<SocialHandle span={24} />
 				</TitleRow>
 			</Section>

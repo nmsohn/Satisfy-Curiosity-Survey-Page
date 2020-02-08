@@ -9,7 +9,6 @@ import Team from "../Team/Team";
 import { FullPage, Slide } from 'react-full-page';
 import styled from "styled-components";
 import Footer from "../../components/Footer";
-import SocialHandle from "../../components/SocialHandle";
 
 const { Content } = Layout;
 
@@ -21,11 +20,11 @@ const Menu = styled.h4`
 	color: #fff;
 `;
 
-const CallToAction = styled(Button)`
+const CallToAction = styled.p`
 	{
-		background-color: #9800FF;
-		border: 0;
-		color: #fff;
+		// background-color: #17ffa6;
+		// border: 0;
+		color: #17ffa6;
 		font-size: 16px;
 	}
 `;
@@ -49,5 +48,6 @@ export default ({ data }) => (
 				</Slide>
 			</FullPage>
 		</Main>
+		<Footer centerColumn={<Menu>@SkillShareNZ</Menu>} />
 	</Container>
 );

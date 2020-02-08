@@ -26,6 +26,7 @@ const CenterCol = styled(Col)`
 		text-align: "center";
 		font-weight: 600;
 		text-transform: "uppercase";
+		color: #fff;
 	}
 `;
 
