@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import Typewriter from "typewriter-effect";
 import styled from "styled-components";
-import SocialHandle from "../../components/SocialHandle";
 import { Row, Col } from "antd";
 import { KeyboardArrowDown } from "styled-icons/material/KeyboardArrowDown";
-import { useSpring, animated } from "react-spring";
+import CallToAction from "../../components/CallToAction";
 
 const Section = styled.div`
 	 {
@@ -131,6 +130,47 @@ const Arrow = styled(KeyboardArrowDown)`
 	}
 `;
 
+const Sub2 = styled.span`
+{	color: #fff;
+	display: block;
+	margin: 0 auto;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 auto;
+	-ms-flex: 0 auto;
+	flex: 0 auto;
+	font-weight: 300;
+	text-align: center;
+	font-size: 14px;}
+`;
+
+const SurveyButton = styled.div`
+	{
+		display: block;
+		margin: 0 auto;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 auto;
+		-ms-flex: 0 auto;
+		flex: 0 auto;
+		text-align: center;
+	}
+`;
+
 export default class Hero extends Component {
 	render() {
 		return (
@@ -163,8 +203,14 @@ export default class Hero extends Component {
 						</Title>
 					</TitleCol>
 					<Sub>Find a new hobby or build up your skills with us!</Sub>
+					<Sub2>
+						<span>Before we launch our platform,</span><br/>
+						<span>please take a survey to help us to improve our service</span>
+					</Sub2>
 					<Arrow size={30} />
-					<SocialHandle span={24} />
+					<SurveyButton>
+						<a href="https://tinyurl.com/nzskillshare2"><CallToAction/></a>
+					</SurveyButton>
 				</TitleRow>
 			</Section>
 		);

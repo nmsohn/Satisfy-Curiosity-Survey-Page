@@ -29,7 +29,7 @@ const CallToAction = styled.p`
 
 export default ({ data }) => (
 	<Container className="container">
-		<Header leftColumn={<Menu>SkillShareNZ</Menu>} rightColumn={<CallToAction size="large">Contact Us</CallToAction>} />
+		<Header leftColumn={<Menu>NZSkillShare</Menu>} rightColumn={<CallToAction size="large"><a href="https://tinyurl.com/nzskillshare2" style={{color: "#17ffa6"}}>Take a survey</a></CallToAction>} />
 		<Main>
 			<FullPage>
 				<Slide>
@@ -43,9 +43,9 @@ export default ({ data }) => (
 				</Slide>
 				<Slide>
 					<Contact />
+					<Footer centerColumn={<Menu>@NZSkillShare</Menu>} />
 				</Slide>
 			</FullPage>
 		</Main>
-		<Footer centerColumn={<Menu>@SkillShareNZ</Menu>} />
 	</Container>
 );

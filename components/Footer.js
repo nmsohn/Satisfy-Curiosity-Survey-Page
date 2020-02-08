@@ -13,6 +13,7 @@ const StyledHeader = styled(Footer)`
 		display: flex;
 		overflow: visible;
 		height: 32px;
+		text-align: center;
 	}
 `;
 

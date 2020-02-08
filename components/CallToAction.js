@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Button } from "antd";
 
-const CallToAction = styled(Button)`
+const CallToActionButton = styled(Button)`
 	 {
 		background-color: #9800ff;
 		border: 0;
@@ -14,6 +14,6 @@ const CallToAction = styled(Button)`
 
 export default class CallToAction extends Component {
 	render() {
-		return <CallToAction size="large">Do you wanna hear more about us?</CallToAction>;
+		return <CallToActionButton size="large">Take a Survey</CallToActionButton>;
 	}
 }

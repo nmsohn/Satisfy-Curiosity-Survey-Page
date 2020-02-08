@@ -4,6 +4,7 @@ import Heading from "../../components/Heading";
 import Paragraph from "../../components/Paragraph";
 import { Row, Col } from "antd";
 import styled from "styled-components";
+import SocialHandle from "../../components/SocialHandle";
 
 export default class Contact extends Component {
 	render() {
@@ -36,7 +37,7 @@ export default class Contact extends Component {
 						<Row>
 							<Paragraph paragraph={content} />
 							<Col xs={24} sm={24} md={24} lg={12} xl={12}>
-								mailing
+								<SocialHandle span={24} />
 							</Col>
 						</Row>
 					</ParagraphContainer>

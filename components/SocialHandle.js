@@ -32,10 +32,10 @@ export default class SocialHandle extends Component {
 		return (
 			<SocialCol span={24}>
 				<IconContainer>
-					<a href="#" style={{ color: "#fff" }}>
+					<a href="https://tinyurl.com/wellingtonskillshare" style={{ color: "#fff" }}>
 						<FacebookIcon size={38} />
 					</a>
-					<a href="#" style={{ color: "#fff" }}>
+					<a href="mailto:skillsharenz@gmail.com" style={{ color: "#fff" }}>
 						<MailIcon size={40} />
 					</a>
 				</IconContainer>
