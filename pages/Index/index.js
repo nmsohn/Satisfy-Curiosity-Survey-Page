@@ -22,8 +22,6 @@ const Menu = styled.h4`
 
 const CallToAction = styled.p`
 	{
-		// background-color: #17ffa6;
-		// border: 0;
 		color: #17ffa6;
 		font-size: 16px;
 	}

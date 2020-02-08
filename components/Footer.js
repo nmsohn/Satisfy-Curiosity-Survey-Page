@@ -5,7 +5,14 @@ const Footer = Layout;
 const StyledHeader = styled(Footer)`
 	 {
 		background-color: #000;
-		margin-bottom: 25px;
+		margin-top: 25px;
+		bottom: 0;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		overflow: visible;
+		height: 32px;
 	}
 `;
 
