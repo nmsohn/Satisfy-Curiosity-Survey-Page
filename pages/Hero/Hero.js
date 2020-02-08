@@ -64,13 +64,13 @@ const Title = styled.h2`
 
 const TopTitle = styled.span`
 	 {
-		color: #28b4d7;
+		color: #fff;
 	}
 `;
 
 const BottomTitle = styled.span`
 	 {
-		color: #c23369;
+		color: #fff;
 	}
 `;
 
@@ -152,6 +152,9 @@ export default class Hero extends Component {
 										.pauseFor(1500)
 										.deleteAll()
 										.typeString("Events")
+										.pauseFor(1500)
+										.deleteAll()
+										.typeString("Workshops")
 										.pauseFor(1500)
 										.start();
 								}}

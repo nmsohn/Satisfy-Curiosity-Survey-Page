@@ -5,11 +5,11 @@ import { Section } from "../../components/StyledComponents";
 export default class Contact extends Component {
 	render() {
 		const title = "Contact Us";
-		const description = "contact description";
+		const content = "While our team is working on building a platform, join our facebook group or contact us for more about our service!";
 
 		return (
 			<Section className="section-contact component last-component">
-				<Headline heading={title} paragraph={description}></Headline>
+				<Headline heading={title} description={content}></Headline>
 			</Section>
 		);
 	}

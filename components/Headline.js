@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Row, Col } from "antd";
 import styled from "styled-components";
-import { Parallax } from "react-scroll-parallax";
 
 export default class Headline extends Component {
 	static propTypes = {
@@ -46,16 +45,18 @@ export default class Headline extends Component {
 					'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 				line-height: 26px;
 				font-weight: 300;
+				margin-top: 10px;
 			}
 		`;
 		const Paragraph = styled.p`
 			margin-top: 24px;
 			margin-bottom: 0px;
+			margin-right: 10px;
 			padding-right: 24px;
 			padding-left: 0px;
-			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-				'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-			color: #999;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+			color:
+			#999;
 			font-size: 19px;
 			font-weight: 300;
 			text-align: left;
@@ -82,7 +83,7 @@ export default class Headline extends Component {
 				</HeadingContainer>
 				<ParagraphContainer>
 					<Row>
-						<Col>
+						<Col xs={24} sm={24} md={24} lg={12} xl={12}>
 							<Paragraph
 								className="description"
 								data-aos="fade-up"
@@ -95,7 +96,7 @@ export default class Headline extends Component {
 								{description}
 							</Paragraph>
 						</Col>
-						<Col>
+						<Col xs={24} sm={24} md={24} lg={12} xl={12}>
 							<Paragraph
 								className="description2"
 								data-aos="fade-up"
@@ -116,6 +117,5 @@ export default class Headline extends Component {
 }
 
 Headline.propTypes = {
-	heading: PropTypes.string,
-	description: PropTypes.string
+	heading: PropTypes.string
 };

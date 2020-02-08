@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
 		// const styles = flush();
 
 		// return {html, head, styles};
-		const sheet = new ServerStyleSheet();
+		const sheet = new ServerStyleSheet();	
 		const originalRenderPage = ctx.renderPage;
 
 		try {
