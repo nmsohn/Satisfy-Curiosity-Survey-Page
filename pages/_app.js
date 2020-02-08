@@ -3,13 +3,15 @@ import React from "react";
 import NProgress from "nprogress";
 import Router from "next/router";
 import moment from "moment";
-import { Layout } from "antd";
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import { ThemeProvider } from "styled-components";
 import theme from "../assets/theme";
 import GlobalStyle from "../assets/GlobalStyles";
 import { ParallaxProvider } from "react-scroll-parallax";
 
 moment.locale("en");
+config.autoAddCss = false;
 
 Router.events.on("routeChangeStart", url => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());

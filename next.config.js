@@ -41,4 +41,4 @@ if (typeof require !== "undefined") {
 	require.extensions[".less"] = (file) => {};
 }
 
-module.exports = withPlugins([ [ withImages ], [ withAntd, lessConfig ], nextConfig ]);
+module.exports = withPlugins([ [ withImages ], [withCss], [ withAntd, lessConfig ], nextConfig ]);

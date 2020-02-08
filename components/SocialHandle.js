@@ -1,13 +1,28 @@
-import React, { Component } from 'react'
-import {Icon} from "antd";
+import React, { Component } from 'react';
+import { FacebookSquare } from 'styled-icons/boxicons-logos/FacebookSquare';
+import styled from "styled-components";
+import { Col } from "antd";
+
+const SocialCol = styled(Col)`
+{
+    width: 100%;
+}
+`;
+
+const FacebookIcon = styled(FacebookSquare)`
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    color: "#fff";
+    font-size: "30px";
+`;
 
 export default class SocialHandle extends Component {
     render() {
         return (
-            <div className="social-handle">
-                <Icon type="mail" theme="outlined" style={{ fontSize: '16px', color: '#fff' }}></Icon>
-                <Icon type="facebook" theme="outlined" style={{ fontSize: '16px', color: '#fff' }}></Icon>
-            </div>
+            <SocialCol span={24}>
+                <FacebookIcon />
+            </SocialCol>
         )
     }
 }

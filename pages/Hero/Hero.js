@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Typewriter from "typewriter-effect";
 import styled from "styled-components";
 import SocialHandle from "../../components/SocialHandle";
+import { Row, Col } from "antd";
 
 const Section = styled.div`
 	 {
@@ -23,6 +24,15 @@ const Section = styled.div`
 	}
 `;
 
+const TitleRow = styled(Row)`
+	width: 100%;
+`;
+
+const TitleCol = styled(Col)`
+	{
+		width:100%;
+	}
+`;
 
 const Title = styled.h2`
 	 {
@@ -64,28 +74,33 @@ export default class Hero extends Component {
 	render() {
 		return (
 			<Section className="section-hero component first-component">
-				<Title>
-					<TopTitle>Discover Local</TopTitle>
-					<Typewriter
-						options={{
-							loop: true
-						}}
-						onInit={(typewriter) => {
-							typewriter
-								.typeString("Lessons")
-								.pauseFor(1500)
-								.deleteAll()
-								.typeString("Classes")
-								.pauseFor(1500)
-								.deleteAll()
-								.typeString("Events")
-								.pauseFor(1500)
-								.start();
-						}}
-					/>
-					<BottomTitle>Today!</BottomTitle>
-				</Title>
-				<SocialHandle />
+				<TitleRow>
+					<TitleCol span={24}>
+						<Title>
+							<TopTitle>Discover Local</TopTitle>
+							<Typewriter
+									options={{
+										loop: true
+									}}
+									onInit={(typewriter) => {
+										typewriter
+											.typeString("Lessons")
+											.pauseFor(1500)
+											.deleteAll()
+											.typeString("Classes")
+											.pauseFor(1500)
+											.deleteAll()
+											.typeString("Events")
+											.pauseFor(1500)
+											.start();
+									}}
+								/>
+							<BottomTitle>Today!</BottomTitle>
+						</Title>
+					</TitleCol>
+					<SocialHandle span={24} />
+				</TitleRow>
+				
 			</Section>
 		);
 	}

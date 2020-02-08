@@ -49,6 +49,5 @@ export default ({ data }) => (
 				</Slide>
 			</FullPage>
 		</Main>
-		<Footer centerColumn={<SocialHandle />}/>
 	</Container>
 );
