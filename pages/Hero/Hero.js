@@ -3,6 +3,8 @@ import Typewriter from "typewriter-effect";
 import styled from "styled-components";
 import SocialHandle from "../../components/SocialHandle";
 import { Row, Col } from "antd";
+import { KeyboardArrowDown } from "styled-icons/material/KeyboardArrowDown";
+import { useSpring, animated } from "react-spring";
 
 const Section = styled.div`
 	 {
@@ -29,8 +31,8 @@ const TitleRow = styled(Row)`
 `;
 
 const TitleCol = styled(Col)`
-	{
-		width:100%;
+	 {
+		width: 100%;
 	}
 `;
 
@@ -56,19 +58,70 @@ const Title = styled.h2`
 		font-weight: 300;
 		text-align: center;
 		color: #17ffa6;
-		font-family: 'Anton';
+		font-family: "Anton";
 	}
 `;
 
 const TopTitle = styled.span`
-{
-	color: #28b4d7;
-}`;
+	 {
+		color: #28b4d7;
+	}
+`;
 
 const BottomTitle = styled.span`
-{
-	color: #c23369;
-}`;
+	 {
+		color: #c23369;
+	}
+`;
+
+const Sub = styled.p`
+	 {
+		color: #fff;
+		display: block;
+		margin: 0 auto;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 auto;
+		-ms-flex: 0 auto;
+		flex: 0 auto;
+		line-height: 80px;
+		font-weight: 300;
+		text-align: center;
+		font-size: 24px;
+	}
+`;
+
+const Arrow = styled(KeyboardArrowDown)`
+	 {
+		color: #fff;
+		line-height: 80px;
+		font-weight: 300;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 auto;
+		-ms-flex: 0 auto;
+		flex: 0 auto;
+	}
+`;
+
+const interp = i => r => `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`;
 
 export default class Hero extends Component {
 	render() {
@@ -79,28 +132,29 @@ export default class Hero extends Component {
 						<Title>
 							<TopTitle>Discover Local</TopTitle>
 							<Typewriter
-									options={{
-										loop: true
-									}}
-									onInit={(typewriter) => {
-										typewriter
-											.typeString("Lessons")
-											.pauseFor(1500)
-											.deleteAll()
-											.typeString("Classes")
-											.pauseFor(1500)
-											.deleteAll()
-											.typeString("Events")
-											.pauseFor(1500)
-											.start();
-									}}
-								/>
+								options={{
+									loop: true
+								}}
+								onInit={typewriter => {
+									typewriter
+										.typeString("Lessons")
+										.pauseFor(1500)
+										.deleteAll()
+										.typeString("Classes")
+										.pauseFor(1500)
+										.deleteAll()
+										.typeString("Events")
+										.pauseFor(1500)
+										.start();
+								}}
+							/>
 							<BottomTitle>Today!</BottomTitle>
 						</Title>
 					</TitleCol>
+					<Sub>Find a new hobby or build up your skills with us!</Sub>
+					<Arrow size={28} className="bounce" />
 					<SocialHandle span={24} />
 				</TitleRow>
-				
 			</Section>
 		);
 	}

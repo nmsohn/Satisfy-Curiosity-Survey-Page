@@ -7,23 +7,38 @@ import { Col } from "antd";
 const SocialCol = styled(Col)`
 	 {
 		width: 100%;
+		display: flex;
 	}
 `;
 
 const FacebookIcon = styled(FacebookSquare)`
-	margin: 20px auto;
-	align-items: center;
-	display: flex;
 	color: "#fff";
+`;
+
+const MailIcon = styled(Mail)`
+	color: "#fff";
+	padding-left: 5px;
+`;
+
+const IconContainer = styled.div`
+	 {
+		margin: 20px auto;
+		align-items: center;
+	}
 `;
 
 export default class SocialHandle extends Component {
 	render() {
 		return (
 			<SocialCol span={24}>
-				<a href="#" style={{ color: "#fff" }}>
-					<FacebookIcon size={38} />
-				</a>
+				<IconContainer>
+					<a href="#" style={{ color: "#fff" }}>
+						<FacebookIcon size={38} />
+					</a>
+					<a href="#" style={{ color: "#fff" }}>
+						<MailIcon size={40} />
+					</a>
+				</IconContainer>
 			</SocialCol>
 		);
 	}
