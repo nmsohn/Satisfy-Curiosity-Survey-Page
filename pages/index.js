@@ -30,9 +30,35 @@ const CallToAction = styled.p`
 
 export default ({ data }) => (
 	<>
-	<GlobalStyle />
+		<GlobalStyle />
 		<Head>
-			<title>NZSkillShare - Talents meet Curiosity</title>
+		<title>NZSkillShare - Talents meet Curiosity</title>
+		<style
+			id='flashStyle'
+			dangerouslySetInnerHTML={{
+				__html: `
+				*, *::before, *::after {
+					transition: none!important;
+				}
+				`
+			}}
+			/>
+			<meta charSet="utf-8" />
+			<meta
+				name="viewport"
+				content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+			/>
+			<meta name="description" content="NZSkillShare" />
+			<meta name="keywords" content="jobs, nz, private lessons, hobbies, gig economy, classes" />
+			<link rel="manifest" href="/public/manifest.json" />
+			<link
+				rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+			/>
+			<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+			<link rel="shortcut icon" href="/public/favicon.ico" />
+			<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
+
 			<style
 				id='flashStyle'
 				dangerouslySetInnerHTML={{
@@ -43,21 +69,6 @@ export default ({ data }) => (
 					`
 				}}
 				/>
-				<meta charSet="utf-8" />
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
-				/>
-				<meta name="description" content="NZSkillShare" />
-				<meta name="keywords" content="jobs, nz, private lessons, hobbies, gig economy, classes" />
-				<link rel="manifest" href="/public/manifest.json" />
-				<link
-					rel="stylesheet"
-					href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-				/>
-				<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-				<link rel="shortcut icon" href="/public/favicon.ico" />
-				<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
 		</Head>
 		<Container className="container">
 			<Header leftColumn={<Menu>NZSkillShare</Menu>} rightColumn={<CallToAction size="large"><a href="https://tinyurl.com/nzskillshare2" style={{color: "#17ffa6"}}>Take a survey</a></CallToAction>} />
