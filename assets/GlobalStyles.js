@@ -3,8 +3,6 @@ import reset from "styled-reset";
 import { theme } from "styled-tools";
 
 const GlobalStyle = createGlobalStyle`
-	@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
-	@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 	${reset}
 	* {
         box-sizing : border-box;
