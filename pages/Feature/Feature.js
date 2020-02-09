@@ -3,29 +3,6 @@ import Headline from "../../components/Headline";
 import { Section } from "../../components/StyledComponents";
 import styled from "styled-components";
 
-const Decor = styled.h1`
-{
-	color: #fff;
-	display: inline-block;
-}`;
-
-const First = styled.span`
-
-`;
-
-const Middle = styled.span`
-
-`;
-
-const Middle2 = styled.span`
-
-`;
-
-const End = styled.span`
-
-`;
-
-
 export default class Feature extends Component {
 	render() {
 		const title = "Make your day meaningful";
