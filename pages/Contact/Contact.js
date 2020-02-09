@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Section } from "../../components/StyledComponents";
 import Heading from "../../components/Heading";
-import Paragraph from "../../components/Paragraph";
 import { Row, Col } from "antd";
 import styled from "styled-components";
 import SocialHandle from "../../components/SocialHandle";
+import Paragraph from "../../components/Paragraph"
 
 export default class Contact extends Component {
 	render() {
