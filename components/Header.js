@@ -1,6 +1,5 @@
-import { Layout, Row, Col } from "antd";
+import { Row, Col } from "antd";
 import styled from "styled-components";
-import { theme } from "styled-tools";
 
 const StyledHeader = styled.div`
 	 {
@@ -15,8 +14,8 @@ const StyledHeader = styled.div`
 		display: flex;
 		overflow: visible;
 		height: 72px;
-		background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(transparent));
-		background-image: linear-gradient(180deg, #000, transparent);
+		${"" /* background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(transparent));
+		background-image: linear-gradient(180deg, #fff, transparent); */}
 	}
 `;
 
@@ -54,9 +53,10 @@ const RightCol = styled(Col)`
 `;
 
 const NavBar = styled(Row)`
-	{
+	 {
 		width: 100%;
-		background-image: linear-gradient(180deg, #000, transparent);
+		${"" /* background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(transparent));
+		background-image: linear-gradient(180deg, #fff, transparent); */}
 		height: 72px;
 		padding-top: 0px;
 		padding-right: 12px;

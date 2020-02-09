@@ -4,7 +4,7 @@ const Footer = Layout;
 
 const StyledHeader = styled(Footer)`
 	 {
-		background-color: #000;
+		background-color: #fff;
 		margin-top: 25px;
 		bottom: 0;
 		display: -webkit-box;
@@ -34,7 +34,7 @@ const CenterCol = styled(Col)`
 		text-align: "center";
 		font-weight: 600;
 		text-transform: "uppercase";
-		color: #fff;
+		color: #000;
 	}
 `;
 

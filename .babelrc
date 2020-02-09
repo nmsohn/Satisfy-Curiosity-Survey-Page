@@ -9,6 +9,9 @@
       } 
     ],
     [
+      "styled-jsx/babel"
+    ],
+    [
       "import", {
         "libraryName": "antd",
         "style": true

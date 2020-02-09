@@ -4,31 +4,33 @@ import Heading from "../../components/Heading";
 import { Row, Col } from "antd";
 import styled from "styled-components";
 import SocialHandle from "../../components/SocialHandle";
-import Paragraph from "../../components/Paragraph"
+import Paragraph from "../../components/Paragraph";
 
-export default class Contact extends Component {
-	render() {
-		const title = "Contact Us";
-		const content = "While our team is working on building a platform, join our facebook group or contact us for more about our service!";
-		const HeadLine = styled.div`
-		{
-			margin-left: auto;
-			margin-right: auto;
-			max-width: 940px;
-			position: static;
-			display: block;
-		}`;
+const title = "Contact Us";
+const content =
+	"While our team is working on building a platform, join our facebook group or contact us for more about our service!";
+const HeadLine = styled.div`
+	 {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 940px;
+		position: static;
+		display: block;
+	}
+`;
 
-		const ParagraphContainer = styled.div`
-		{
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-			'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+const ParagraphContainer = styled.div`
+	 {
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+			"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 		line-height: 26px;
 		font-weight: 300;
 		margin-top: 10px;
-		}
-	`;
+	}
+`;
 
+export default class Contact extends Component {
+	render() {
 		return (
 			<Section className="section-contact component last-component">
 				<HeadLine>

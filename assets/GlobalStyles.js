@@ -1,14 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-import { theme } from "styled-tools";
 
 const GlobalStyle = createGlobalStyle`
 	${reset}
 	* {
-        box-sizing : border-box;
-    }
+    box-sizing : border-box;
+	}
 	html {
-		background-color: #000;
+		background-color: #fff;
 	}
 	body {
 		margin: 0;
@@ -24,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
 		"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 		scrollbar-color: #495460 rgba(255, 255, 255, 0);
 		scrollbar-width: thin;
-		background-color: #000;
+		background-color: #fff;
 	}
 `;
 export default GlobalStyle;

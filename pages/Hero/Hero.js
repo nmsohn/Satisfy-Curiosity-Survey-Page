@@ -20,13 +20,15 @@ const Section = styled.div`
 		padding-right: 32px;
 		padding-left: 32px;
 		-webkit-box-align: center;
-		background-color: #000;
-		color: #fff;
+		background-color: #fff;
+		color: #000;
 	}
 `;
 
 const TitleRow = styled(Row)`
-	width: 100%;
+	 {
+		width: 100%;
+	}
 `;
 
 const TitleCol = styled(Col)`
@@ -63,19 +65,19 @@ const Title = styled.h2`
 
 const TopTitle = styled.span`
 	 {
-		color: #fff;
+		color: #000;
 	}
 `;
 
 const BottomTitle = styled.span`
 	 {
-		color: #fff;
+		color: #000;
 	}
 `;
 
 const Sub = styled.p`
 	 {
-		color: #fff;
+		color: #000;
 		display: block;
 		margin: 0 auto;
 		-webkit-box-pack: center;
@@ -99,7 +101,7 @@ const Sub = styled.p`
 
 const Arrow = styled(KeyboardArrowDown)`
 	 {
-		color: #fff;
+		color: #000;
 		line-height: 80px;
 		font-weight: 300;
 		text-align: center;
@@ -117,42 +119,44 @@ const Arrow = styled(KeyboardArrowDown)`
 		-webkit-flex: 0 auto;
 		-ms-flex: 0 auto;
 		flex: 0 auto;
-		animation: anim .35s ease-in alternate infinite;
-      
+		animation: anim 0.35s ease-in alternate infinite;
+
 		@keyframes anim {
-		  0% {
-			transform: translateY(0);
-		  }
-		  100% {
-			transform: translateY(10px);
-		  }
+			0% {
+				transform: translateY(0);
+			}
+			100% {
+				transform: translateY(10px);
+			}
 		}
 	}
 `;
 
 const Sub2 = styled.span`
-{	color: #fff;
-	display: block;
-	margin: 0 auto;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-flex: 0;
-	-webkit-flex: 0 auto;
-	-ms-flex: 0 auto;
-	flex: 0 auto;
-	font-weight: 300;
-	text-align: center;
-	font-size: 14px;}
+	 {
+		color: #000;
+		display: block;
+		margin: 0 auto;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 auto;
+		-ms-flex: 0 auto;
+		flex: 0 auto;
+		font-weight: 300;
+		text-align: center;
+		font-size: 14px;
+	}
 `;
 
 const SurveyButton = styled.div`
-	{
+	 {
 		display: block;
 		margin: 0 auto;
 		-webkit-box-pack: center;
@@ -204,12 +208,15 @@ export default class Hero extends Component {
 					</TitleCol>
 					<Sub>Find a new hobby or build up your skills with us!</Sub>
 					<Sub2>
-						<span>Before we launch our platform,</span><br/>
+						<span>Before we launch our platform,</span>
+						<br />
 						<span>please take a survey to help us to improve our service</span>
 					</Sub2>
 					<Arrow size={30} />
 					<SurveyButton>
-						<a href="https://tinyurl.com/nzskillshare2"><CallToAction/></a>
+						<a href="https://tinyurl.com/nzskillshare2">
+							<CallToAction />
+						</a>
 					</SurveyButton>
 				</TitleRow>
 			</Section>

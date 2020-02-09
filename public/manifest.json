@@ -1,8 +1,8 @@
 {
     "name": "Lend A Hand",
     "short_name": "LAH",
-    "background_color": "#000",
-    "theme_color": "#000",
+    "background_color": "#fff",
+    "theme_color": "#fff",
     "display": "standalone",
     "start_url": "/",
     "orientation": "portrait"
