@@ -40,12 +40,6 @@ export default ({ centerColumn, rightColumn, leftColumn }) => {
 				</CenterCol>
 				<RightCol span={8}>{rightColumn}</RightCol>
 				<style jsx>{`
-					.center-col {
-						text-align: center;
-						font-weight: 600;
-						text-transform: uppercase;
-						color: #000;
-					}
 					.footer {
 						background-color: #fff;
 						margin-top: 25px;
