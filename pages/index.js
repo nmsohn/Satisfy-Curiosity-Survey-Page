@@ -19,10 +19,6 @@ const Main = styled(Content)`
 	height: 1903px;
 `;
 
-const Menu = styled.h4`
-	color: #000;
-`;
-
 export default ({ data }) => (
 	<>
 		<Head>
