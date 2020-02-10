@@ -13,11 +13,11 @@ const SocialCol = styled(Col)`
 `;
 
 const FacebookIcon = styled(FacebookSquare)`
-	color: "#fff";
+	color: "#000";
 `;
 
 const MailIcon = styled(Mail)`
-	color: "#fff";
+	color: "#000";
 	padding-left: 5px;
 `;
 
@@ -26,10 +26,10 @@ export default class SocialHandle extends Component {
 		return (
 			<SocialCol span={24}>
 				<div className="icon-container">
-					<a href="https://tinyurl.com/wellingtonskillshare" style={{ color: "#fff" }}>
+					<a href="https://tinyurl.com/wellingtonskillshare" style={{ color: "#000" }}>
 						<FacebookIcon size={38} />
 					</a>
-					<a href="mailto:skillsharenz@gmail.com" style={{ color: "#fff" }}>
+					<a href="mailto:skillsharenz@gmail.com" style={{ color: "#000" }}>
 						<MailIcon size={40} />
 					</a>
 					<style jsx>

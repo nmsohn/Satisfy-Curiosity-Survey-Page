@@ -1,52 +1,65 @@
 import { Layout, Row, Col } from "antd";
 import styled from "styled-components";
-const Footer = Layout;
 import _JSXStyle from "styled-jsx/style";
 
-const StyledHeader = styled(Footer)`
-	 {
-		background-color: #fff;
-		margin-top: 25px;
-		bottom: 0;
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		overflow: visible;
-		height: 32px;
-		text-align: center;
-	}
+const StyledHeader = styled.div`
+	background-color: #fff;
+	margin-top: 25px;
+	bottom: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: visible;
+	height: 32px;
+	text-align: center;
 `;
 
 const LeftCol = styled(Col)`
-	 {
-		textalign: "left";
-	}
+	textalign: left;
 `;
 
 const RightCol = styled(Col)`
-	 {
-		textalign: "right";
-	}
+	textalign: right;
 `;
 
 const CenterCol = styled(Col)`
-	 {
-		text-align: "center";
-		font-weight: 600;
-		text-transform: "uppercase";
-		color: #000;
-	}
+	text-align: center;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #000;
 `;
 
 export default ({ centerColumn, rightColumn, leftColumn }) => {
 	return (
-		<StyledHeader theme="dark" className="header">
+		<StyledHeader theme="dark" className="footer">
 			<Row>
 				<LeftCol span={8}>{leftColumn}</LeftCol>
-				<CenterCol span={8}>{centerColumn}</CenterCol>
+				<CenterCol className="center-col" span={8}>
+					{centerColumn}
+				</CenterCol>
 				<RightCol span={8}>{rightColumn}</RightCol>
 			</Row>
+			<style jsx>{`
+				.center-col {
+					text-align: center;
+					font-weight: 600;
+					text-transform: uppercase;
+					color: #000;
+				}
+				.footer {
+					background-color: #fff;
+					margin-top: 25px;
+					bottom: 0;
+					display: -webkit-box;
+					display: -webkit-flex;
+					display: -ms-flexbox;
+					display: flex;
+					overflow: visible;
+					height: 32px;
+					text-align: center;
+				}
+			`}</style>
 		</StyledHeader>
 	);
 };

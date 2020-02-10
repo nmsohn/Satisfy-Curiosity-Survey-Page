@@ -23,10 +23,6 @@ const Menu = styled.h4`
 	color: #000;
 `;
 
-const CallToAction = styled.div`
-	font-size: 16px;
-`;
-
 export default ({ data }) => (
 	<>
 		<Head>
@@ -34,8 +30,12 @@ export default ({ data }) => (
 		</Head>
 		<Container className="container">
 			<Header
-				leftColumn={<Menu style={{ fontSize: "16px" }}>NZSkillShare</Menu>}
-				rightColumn={<a href="https://tinyurl.com/nzskillshare2">Take a survey</a>}
+				leftColumn={<h4 style={{ fontSize: "16px" }}>NZSkillShare</h4>}
+				rightColumn={
+					<a className="cta" href="https://tinyurl.com/nzskillshare2">
+						Take a survey
+					</a>
+				}
 			/>
 			<style jsx>
 				{`
@@ -54,6 +54,9 @@ export default ({ data }) => (
 						background-size: 100% 88%;
 						color: white;
 					}
+					.copy-rights {
+						margin: 0 auto;
+					}
 				`}
 			</style>
 			<Main>
@@ -70,7 +73,7 @@ export default ({ data }) => (
 					<Contact />
 				</Element>
 
-				<Footer centerColumn={<Menu>@NZSkillShare</Menu>} />
+				<Footer centerColumn={<h4 className="copy-rights">@NZSkillShare</h4>} />
 			</Main>
 		</Container>
 	</>

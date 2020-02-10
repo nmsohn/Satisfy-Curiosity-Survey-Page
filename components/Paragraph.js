@@ -28,7 +28,7 @@ export default class Paragraph extends Component {
 						padding-left: 0px;
 						font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
 							Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-						color: #999;
+						color: #000;
 						font-size: 19px;
 						font-weight: 300;
 						text-align: left;
