@@ -22,7 +22,7 @@ const CenterCol = styled(Col)`
 `;
 
 export default ({ centerColumn, rightColumn, leftColumn }) => {
-	return (
+	return (	
 		<div className="footer-container">
 			<div theme="dark" className="footer">
 				<FooterRow className="footer-row">
