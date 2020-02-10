@@ -13,8 +13,6 @@ const StyledHeader = styled.div`
 	display: flex;
 	overflow: visible;
 	height: 72px;
-	${"" /* background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(transparent));
-		background-image: linear-gradient(180deg, #fff, transparent); */}
 `;
 
 const LeftCol = styled(Col)`
@@ -46,8 +44,8 @@ const RightCol = styled(Col)`
 
 const NavBar = styled(Row)`
 	width: 100%;
-	${"" /* background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(transparent));
-		background-image: linear-gradient(180deg, #fff, transparent); */}
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(transparent));
+	background-image: linear-gradient(180deg, #fff, transparent);
 	height: 72px;
 	padding-top: 0px;
 	padding-right: 12px;

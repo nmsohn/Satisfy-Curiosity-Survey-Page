@@ -6,11 +6,10 @@ import _JSXStyle from "styled-jsx/style";
 
 export default class Heading extends Component {
 	render() {
-		const HeadingContainer = styled.div``;
 		const title = this.props.title;
 
 		return (
-			<HeadingContainer>
+			<div className="headline">
 				<h2
 					className="heading"
 					data-aos="fade-up"
@@ -24,6 +23,9 @@ export default class Heading extends Component {
 				</h2>
 				<style jsx>
 					{`
+						.headline{
+							margin-bottom:20px;
+						}
 						h2 {
 							position: static;
 							left: 0%;
@@ -40,11 +42,11 @@ export default class Heading extends Component {
 							line-height: 86px;
 							font-weight: 300;
 							text-align: left;
-							text-decoration: none;
+							text-decoration: none;	
 						}
 					`}
 				</style>
-			</HeadingContainer>
+			</div>
 		);
 	}
 }

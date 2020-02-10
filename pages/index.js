@@ -26,7 +26,7 @@ export default ({ data }) => (
 		</Head>
 		<Container className="container">
 			<Header
-				leftColumn={<h4 style={{ fontSize: "16px" }}>NZSkillShare</h4>}
+				leftColumn={<h4 style={{ fontSize: "16px", fontWeight: "bold" }}>NZSkillShare</h4>}
 				rightColumn={
 					<a className="cta" href="https://tinyurl.com/nzskillshare2">
 						Take a survey
@@ -45,9 +45,8 @@ export default ({ data }) => (
 				</Element>
 				<Element name="test4" className="element">
 					<Contact />
+					<Footer centerColumn={<h4 className="copy-rights">@NZSkillShare</h4>} />
 				</Element>
-
-				<Footer centerColumn={<h4 className="copy-rights">@NZSkillShare</h4>} />
 			</Main>
 			<style jsx>
 				{`

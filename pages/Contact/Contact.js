@@ -9,60 +9,59 @@ import Paragraph from "../../components/Paragraph";
 
 const title = "Contact Us";
 const content =
-	"While our team is working on building a platform, join our facebook group or contact us for more about our service!";
-const HeadLine = styled.div`
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 940px;
-	position: static;
-	display: block;
-`;
-
-const ParagraphContainer = styled.div`
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-	line-height: 26px;
-	font-weight: 300;
-	margin-top: 10px;
-`;
+	"If you want to hear more about us, join our facebook group or contact us via email.";
 
 export default class Contact extends Component {
 	render() {
 		return (
-			<div className="section-contact component last-component">
-				<HeadLine>
-					<Heading title={title} />
-					<ParagraphContainer>
-						<Row>
-							<Paragraph paragraph={content} />
-							<Col xs={24} sm={24} md={24} lg={12} xl={12}>
-								<SocialHandle span={24} />
-							</Col>
-						</Row>
-					</ParagraphContainer>
-				</HeadLine>
-				<style jsx>
-					{`
-						.component {
-							display: flex;
-							position: relative;
-							left: 0%;
-							top: 0%;
-							right: 0%;
-							bottom: auto;
-							z-index: 2;
-							min-height: 80vh;
-							align-items: center;
-							display: flex;
-							padding-right: 32px;
-							padding-left: 32px;
-							-webkit-box-align: center;
-							background-color: #fff;
-							color: #000;
-						}
-					`}
-				</style>
-			</div>
+				<div className="section-contact component last-component">
+					<div className="headline">
+						<Heading title={title} />
+						<div className="paragraph-container">
+							<Row>
+								<Paragraph paragraph={content} />
+								<Col xs={24} sm={24} md={24} lg={12} xl={12}>
+									<SocialHandle span={24} />
+								</Col>
+							</Row>
+						</div>
+					</div>
+					<style jsx>
+						{`
+							.component {
+								display: flex;
+								position: relative;
+								left: 0%;
+								top: 0%;
+								right: 0%;
+								bottom: auto;
+								z-index: 2;
+								min-height: 90vh;
+								align-items: center;
+								display: flex;
+								padding-right: 32px;
+								padding-left: 32px;
+								-webkit-box-align: center;
+								background-color: #fff;
+								color: #000;
+							}
+							.headline{
+								margin-left: auto;
+								margin-right: auto;
+								max-width: 940px;
+								position: static;
+								display: block;
+							}
+							.paragraph-container{
+								font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+								"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+								line-height: 26px;
+								font-weight: 300;
+								margin-top: 10px;
+							}
+						`}
+					</style>
+				</div>
 		);
 	}
 }

@@ -7,10 +7,6 @@ import Paragraph from "../components/Paragraph";
 import _JSXStyle from "styled-jsx/style";
 
 export default class Headline extends Component {
-	static propTypes = {
-		prop: PropTypes
-	};
-
 	render() {
 		const heading = this.props.heading;
 		const description = this.props.description;
@@ -47,7 +43,3 @@ export default class Headline extends Component {
 		);
 	}
 }
-
-Headline.propTypes = {
-	heading: PropTypes.string
-};

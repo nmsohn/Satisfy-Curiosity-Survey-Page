@@ -34,8 +34,11 @@ export default class SocialHandle extends Component {
 					</a>
 					<style jsx>
 						{`
+						.icon-container{
 							margin: 20px auto;
 							align-items: center;
+							text-align: center;
+						}
 						`}
 					</style>
 				</div>

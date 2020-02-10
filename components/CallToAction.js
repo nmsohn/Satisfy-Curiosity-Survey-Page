@@ -3,12 +3,16 @@ import styled from "styled-components";
 import { Button } from "antd";
 
 const CallToActionButton = styled(Button)`
-	 {
+	background-color: #9800ff;
+	border: 0;
+	color: #fff;
+	font-size: 16px;
+	margin: 15px auto;
+
+	&:hover {
 		background-color: #9800ff;
-		border: 0;
-		color: #fff;
-		font-size: 16px;
-		margin: 15px auto;
+		color:#fff;
+		opacity: 0.6;
 	}
 `;
 
