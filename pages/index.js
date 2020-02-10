@@ -37,6 +37,22 @@ export default ({ data }) => (
 					</a>
 				}
 			/>
+			<Main>
+				<Element name="test1" className="element">
+					<Hero />
+				</Element>
+				<Element name="test2" className="element">
+					<Feature />
+				</Element>
+				<Element name="test3" className="element">
+					<Team />
+				</Element>
+				<Element name="test4" className="element">
+					<Contact />
+				</Element>
+
+				<Footer centerColumn={<h4 className="copy-rights">@NZSkillShare</h4>} />
+			</Main>
 			<style jsx>
 				{`
 					a {
@@ -56,25 +72,10 @@ export default ({ data }) => (
 					}
 					.copy-rights {
 						margin: 0 auto;
+						text-align: center;
 					}
 				`}
 			</style>
-			<Main>
-				<Element name="test1" className="element">
-					<Hero />
-				</Element>
-				<Element name="test2" className="element">
-					<Feature />
-				</Element>
-				<Element name="test3" className="element">
-					<Team />
-				</Element>
-				<Element name="test4" className="element">
-					<Contact />
-				</Element>
-
-				<Footer centerColumn={<h4 className="copy-rights">@NZSkillShare</h4>} />
-			</Main>
 		</Container>
 	</>
 );
