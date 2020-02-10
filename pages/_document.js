@@ -49,13 +49,13 @@ export default class MyDocument extends Document {
 					<meta name="description" content="NZSkillShare" />
 					<meta name="keywords" content="jobs, nz, private lessons, hobbies, gig economy, classes" />
 					<link rel="manifest" href="/public/manifest.json" />
+					<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
 					<link
 						rel="stylesheet"
 						href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
 					/>
 					<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 					<link rel="shortcut icon" href="/public/favicon.ico" />
-					<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
 					<link rel="stylesheet" type="text/css" href="/asset/custom" />
 					{this.props.styleTags}
 					<GlobalStyle />

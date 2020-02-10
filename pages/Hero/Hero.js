@@ -7,54 +7,12 @@ import CallToAction from "../../components/CallToAction";
 import { Blob } from 'react-blob';
 import _JSXStyle from "styled-jsx/style";
 
-const Section = styled.div`
-	display: flex;
-	position: relative;
-	left: 0%;
-	top: 0%;
-	right: 0%;
-	bottom: auto;
-	z-index: 2;
-	min-height: 90vh;
-	align-items: center;
-	display: flex;
-	padding-right: 32px;
-	padding-left: 32px;
-	-webkit-box-align: center;
-	background-color: #fff;
-	color: #000;
-`;
-
 const TitleRow = styled(Row)`
 	width: 100%;
 `;
 
 const TitleCol = styled(Col)`
 	width: 100%;
-`;
-
-const Title = styled.h2`
-	display: block;
-	margin: 0 auto;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-flex: 0;
-	-webkit-flex: 0 auto;
-	-ms-flex: 0 auto;
-	flex: 0 auto;
-	font-size: 5em;
-	text-transform: uppercase;
-	line-height: 80px;
-	font-weight: 300;
-	text-align: center;
-	color: #17ffa6;
-	font-family: "Anton";
 `;
 
 const BackgroundBlob = ({style, props}) =>
@@ -94,10 +52,10 @@ const BackgroundBlob = ({style, props}) =>
 export default class Hero extends Component {
 	render() {
 		return (
-			<Section className="section-hero component first-component">
-				<TitleRow>
-					<TitleCol span={24}>
-						<Title>
+			<div className="section-hero component first-component">
+				<TitleRow className="title-row">
+					<TitleCol span={24} className="title-col">
+						<h2 className="title">
 							<span style={{color:"#000"}}>Discover Local</span>
 							<Typewriter
 								options={{
@@ -120,7 +78,7 @@ export default class Hero extends Component {
 								}}
 							/>
 							<span style={{color:"#000"}}>Today!</span>
-						</Title>
+						</h2>
 					</TitleCol>
 					<p className="sub">Find a new hobby or build up your skills with us!</p>
 					<span className="sub2">
@@ -138,7 +96,53 @@ export default class Hero extends Component {
 				<BackgroundBlob/>
 				<BackgroundBlob2/>
 				<style jsx>
-					{`	
+					{`
+					.title{
+						display: block;
+						margin: 0 auto;
+						-webkit-box-pack: center;
+						-webkit-justify-content: center;
+						-ms-flex-pack: center;
+						justify-content: center;
+						-webkit-box-align: center;
+						-webkit-align-items: center;
+						-ms-flex-align: center;
+						align-items: center;
+						-webkit-box-flex: 0;
+						-webkit-flex: 0 auto;
+						-ms-flex: 0 auto;
+						flex: 0 auto;
+						font-size: 5em;
+						text-transform: uppercase;
+						line-height: 80px;
+						font-weight: 300;
+						text-align: center;
+						color: #17ffa6;
+						font-family: "Anton";
+					}
+					.title-row{
+						width: 100%;
+					}
+					.title-col{
+						width: 100%;
+					}
+					.component{
+						display: flex;
+						position: relative;
+						left: 0%;
+						top: 0%;
+						right: 0%;
+						bottom: auto;
+						z-index: 2;
+						min-height: 90vh;
+						align-items: center;
+						display: flex;
+						padding-right: 32px;
+						padding-left: 32px;
+						-webkit-box-align: center;
+						background-color: #fff;
+						color: #000;
+					}
 					.highlight {
 						cursor: pointer;
 						text-decoration: none;
@@ -244,7 +248,7 @@ export default class Hero extends Component {
 					}
 					`}
 				</style>
-			</Section>
+			</div>
 		);
 	}
 }

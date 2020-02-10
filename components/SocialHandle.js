@@ -38,6 +38,7 @@ export default class SocialHandle extends Component {
 							margin: 20px auto;
 							align-items: center;
 							text-align: center;
+							margin: 0 auto;
 						}
 						`}
 					</style>
