@@ -1,28 +1,39 @@
 import React, { Component } from "react";
 import Headline from "../../components/Headline";
 import styled from "styled-components";
-// import { Section } from "../../components/StyledComponents";
 import _JSXStyle from "styled-jsx/style";
-import Wave from 'react-wavify';
+import Wave from "react-wavify";
 
 export default class Feature extends Component {
 	render() {
 		const title = "Make your day meaningful";
-		const content =
-			<p>We are aiming to building a community-driven open marketplace where people with <a className="highlight" style={{cursor: "text"}}>talent</a> meet people with <a className="highlight" style={{cursor: "text"}}>curiosity</a>. We encourage any local talents to share their professions, experience or even their hobbies 😎</p>;
+		const content = (
+			<p>
+				We are aiming to building a community-driven open marketplace where people with{" "}
+				<a className="highlight" style={{ cursor: "text" }}>
+					talent
+				</a>{" "}
+				meet people with{" "}
+				<a className="highlight" style={{ cursor: "text" }}>
+					curiosity
+				</a>
+				. We encourage any local talents to share their professions, experience or even their hobbies 😎
+			</p>
+		);
 		const content2 =
 			"Skills can be anything from languages to instruments, cooking to brewing, website design to dancing and many more! Fill your time by making contributions to the community.";
-		
+
 		const WaveBackground3 = () => (
-			<Wave fill='url(#gradient)'
-					paused={false}
-					opacity={0.4}
-					options={{
+			<Wave
+				fill="url(#gradient)"
+				paused={false}
+				opacity={0.4}
+				options={{
 					height: 1,
 					amplitude: 40,
 					speed: 0.15,
 					points: 3
-					}}
+				}}
 			>
 				<defs>
 					<linearGradient id="gradient" gradientTransform="rotate(120)">
@@ -31,7 +42,7 @@ export default class Feature extends Component {
 					</linearGradient>
 				</defs>
 			</Wave>
-			);
+		);
 
 		return (
 			<div>
@@ -59,7 +70,7 @@ export default class Feature extends Component {
 						`}
 					</style>
 				</div>
-				<WaveBackground3/>
+				<WaveBackground3 />
 			</div>
 		);
 	}

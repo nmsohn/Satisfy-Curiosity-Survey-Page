@@ -6,7 +6,8 @@
     "dev": "next -- -p 3003",
     "build": "next build",
     "start": "next start -p 8000",
-    "export": "next export"
+    "export": "next export",
+    "lint": "eslint ."
   },
   "homepage": "./",
   "dependencies": {
@@ -58,9 +59,11 @@
     "autoprefixer": "^9.7.4",
     "babel-eslint": "^10.0.3",
     "babel-plugin-import": "^1.13.0",
-    "eslint": "^6.7.2",
-    "eslint-config-prettier": "^6.7.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",

@@ -1,25 +1,24 @@
 import Head from "next/head";
-import { Layout } from "antd";
 import Header from "../components/Header";
 import Hero from "./Hero/Hero";
-import { Container } from "../components/StyledComponents";
 import Feature from "./Feature/Feature";
 import Contact from "./Contact/Contact";
 import Team from "./Team/Team";
 import Footer from "../components/Footer";
 import _JSXStyle from "styled-jsx/style";
-import Wave from 'react-wavify';
+import Wave from "react-wavify";
 
 const WaveBackground = () => (
-	<Wave fill='url(#gradient3)'
-			paused={false}
-			opacity={0.4}
-			options={{
+	<Wave
+		fill="url(#gradient3)"
+		paused={false}
+		opacity={0.4}
+		options={{
 			height: 1,
 			amplitude: 40,
 			speed: 0.15,
 			points: 3
-			}}
+		}}
 	>
 		<defs>
 			<linearGradient id="gradient3" gradientTransform="rotate(120)">
@@ -28,85 +27,84 @@ const WaveBackground = () => (
 			</linearGradient>
 		</defs>
 	</Wave>
-	);
+);
 
 export default class Index extends React.Component {
 	render() {
-		return(
+		return (
 			<>
-			<Head>
-				<title>NZSkillShare - Talents meet Curiosity</title>
-			</Head>
-			<div className="container" id="container">
-				<Header
-					leftColumn={<h4 style={{ fontSize: "16px", fontWeight: "bold" }}>NZSkillShare</h4>}
-					rightColumn={
-						<a className="cta" href="https://tinyurl.com/nzskillshare2">
-							Take a survey
-						</a>
-					}
-				/>
-				<div className="main">
-					<section name="section2" className="section">
-						<Hero />
-					</section >
-					<section name="section2" className="section">
-						<Feature />
-					</section >		
-					<section name="section3" className="section">
-						<Team />
-					</section >
-					<section name="section4" className="section">
-						<Contact />
-						<Footer centerColumn={<h4 className="copy-rights">@NZSkillShare</h4>} />
-						<WaveBackground/>
-					</section >					
-				</div>
-				<style jsx>
-					{`
-						.container{
-							margin: auto;
-							color: #000;
-							background-color: #fff;
+				<Head>
+					<title>NZSkillShare - Talents meet Curiosity</title>
+				</Head>
+				<div className="container" id="container">
+					<Header
+						leftColumn={<h4 style={{ fontSize: "16px", fontWeight: "bold" }}>NZSkillShare</h4>}
+						rightColumn={
+							<a className="cta" href="https://tinyurl.com/nzskillshare2">
+								Take a survey
+							</a>
 						}
-						@media min-width: 1440px {  
-							// -> "@media (min-width: 1024px)" -> "@media (min-width: 1024px)"
-							.container{
-								max-width: 800px;
+					/>
+					<div className="main">
+						<section name="section2" className="section">
+							<Hero />
+						</section>
+						<section name="section2" className="section">
+							<Feature />
+						</section>
+						<section name="section3" className="section">
+							<Team />
+						</section>
+						<section name="section4" className="section">
+							<Contact />
+							<Footer centerColumn={<h4 className="copy-rights">@NZSkillShare</h4>} />
+							<WaveBackground />
+						</section>
+					</div>
+					<style jsx>
+						{`
+							.container {
+								margin: auto;
+								color: #000;
+								background-color: #fff;
 							}
-						 
-						}
-						@media main-width: 2560px {
-						  .container{
-							max-width: 1400px;
-						  }
-						}
-						a {
-							cursor: pointer;
-							text-decoration: none;
-							color: rgb(16, 16, 16);
-							background-image: linear-gradient(120deg, rgb(46, 199, 192) 0%, rgb(26, 134, 228) 100%);
-							background-repeat: no-repeat;
-							font-weight: bold;
-							background-size: 100% 0.2em;
-							background-position: 0px 100%;
-							transition: background-size 0.25s ease-in 0s;
-						}
-						a:hover {
-							background-size: 100% 88%;
-							color: white;
-						}
-						.copy-rights {
-							margin: 0 auto;
-							text-align: center;
-							font-weight: 600;
-							text-transform: uppercase;
-							color: #fff;
-						}
-					`}
-				</style>
-			</div>
-		</>
+							@media min-width: 1440px {
+								// -> "@media (min-width: 1024px)" -> "@media (min-width: 1024px)"
+								.container {
+									max-width: 800px;
+								}
+							}
+							@media main-width: 2560px {
+								.container {
+									max-width: 1400px;
+								}
+							}
+							a {
+								cursor: pointer;
+								text-decoration: none;
+								color: rgb(16, 16, 16);
+								background-image: linear-gradient(120deg, rgb(46, 199, 192) 0%, rgb(26, 134, 228) 100%);
+								background-repeat: no-repeat;
+								font-weight: bold;
+								background-size: 100% 0.2em;
+								background-position: 0px 100%;
+								transition: background-size 0.25s ease-in 0s;
+							}
+							a:hover {
+								background-size: 100% 88%;
+								color: white;
+							}
+							.copy-rights {
+								margin: 0 auto;
+								text-align: center;
+								font-weight: 600;
+								text-transform: uppercase;
+								color: #fff;
+							}
+						`}
+					</style>
+				</div>
+			</>
 		);
 	}
 }

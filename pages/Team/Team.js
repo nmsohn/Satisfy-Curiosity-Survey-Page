@@ -1,27 +1,33 @@
 import React, { Component } from "react";
 import Headline from "../../components/Headline";
 import _JSXStyle from "styled-jsx/style";
-// import { Section } from "../../components/StyledComponents";
-import Wave from 'react-wavify';
+import Wave from "react-wavify";
 
 export default class Team extends Component {
 	render() {
 		const title = "Our Team";
 		const content =
 			"We started our journey from a small idea. 'What if we build a platform for people who are failing to see the value that their skills might have to someone who wants to learn something?' Now we are starting our MVPs by hearing more from the community.";
-		const content2 =
-			<p>Our team is working towards building an end-to-end platform where talents meet curiosity by connecting people. Meanwhile, we are organising a <a href="https://tinyurl.com/wellingtonskillshare">Facebook group</a> to share our ideas and hear from people who would like to join our service in future!</p>;
-		
+		const content2 = (
+			<p>
+				Our team is working towards building an end-to-end platform where talents meet curiosity by connecting
+				people. Meanwhile, we are organising a{" "}
+				<a href="https://tinyurl.com/wellingtonskillshare">Facebook group</a> to share our ideas and hear from
+				people who would like to join our service in future!
+			</p>
+		);
+
 		const WaveBackground = () => (
-			<Wave fill='url(#gradient2)'
-					paused={false}
-					opacity={0.4}
-					options={{
+			<Wave
+				fill="url(#gradient2)"
+				paused={false}
+				opacity={0.4}
+				options={{
 					height: 1,
 					amplitude: 40,
 					speed: 0.15,
 					points: 3
-					}}
+				}}
 			>
 				<defs>
 					<linearGradient id="gradient2" gradientTransform="rotate(120)">
@@ -30,7 +36,7 @@ export default class Team extends Component {
 					</linearGradient>
 				</defs>
 			</Wave>
-			);
+		);
 		return (
 			<div>
 				<div className="section-team component third-component">
