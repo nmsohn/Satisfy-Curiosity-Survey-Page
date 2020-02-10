@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import _JSXStyle from 'styled-jsx/style';
 import Wave from 'react-wavify';
 import Headline from '../../components/Headline';

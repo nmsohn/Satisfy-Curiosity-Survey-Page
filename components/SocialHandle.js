@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { FacebookSquare } from 'styled-icons/boxicons-logos/FacebookSquare';
 import { Mail } from 'styled-icons/material/Mail';
 import styled from 'styled-components';

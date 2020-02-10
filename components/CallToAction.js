@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Button } from 'antd';
 
@@ -16,8 +16,6 @@ const CallToActionButton = styled(Button)`
 	}
 `;
 
-export default class CallToAction extends Component {
-	render() {
-		return <CallToActionButton size="large">Take a Survey</CallToActionButton>;
-	}
+export default function CallToAction() {
+	return <CallToActionButton size="large">Take a Survey</CallToActionButton>;
 }

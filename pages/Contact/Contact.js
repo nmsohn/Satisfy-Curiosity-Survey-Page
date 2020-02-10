@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import _JSXStyle from 'styled-jsx/style';
 import { Row, Col } from 'antd';
 import Heading from '../../components/Heading';
