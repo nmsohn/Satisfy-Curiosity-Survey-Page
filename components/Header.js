@@ -2,7 +2,7 @@ import { Row, Col } from "antd";
 import styled from "styled-components";
 
 const StyledHeader = styled.div`
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0px;

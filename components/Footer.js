@@ -19,28 +19,38 @@ const CenterCol = styled(Col)`
 
 export default ({ centerColumn, rightColumn, leftColumn }) => {
 	return (
-		<div>
+		<div className="footer-container">
 			<div theme="dark" className="footer">
 				<Row className="footer-row">
-						<LeftCol span={8}>{leftColumn}</LeftCol>
-						<CenterCol className="center-col" span={8}>
-							{centerColumn}
-						</CenterCol>
-						<RightCol span={8}>{rightColumn}</RightCol>
-					<style jsx>{`
-						.footer {
-							background-color: #fff;
-							bottom: 0;
-							display: -webkit-box;
-							display: -webkit-flex;
-							display: -ms-flexbox;
-							display: flex;
-							overflow: visible;
-							text-align: center;
-						}
-					`}</style>
+					<LeftCol span={8}>{leftColumn}</LeftCol>
+					<CenterCol className="center-col" span={8}>
+						{centerColumn}
+					</CenterCol>
+					<RightCol span={8}>{rightColumn}</RightCol>
 				</Row>
 			</div>
+			<style jsx>{`
+				.footer-container{
+					position: absolute;
+					margin: 0 auto;
+					width: 100%;
+					z-index: 2;
+					margin-top: 80px;
+				}
+				.footer {
+					bottom: 0;
+					display: -webkit-box;
+					display: -webkit-flex;
+					display: -ms-flexbox;
+					display: flex;
+					overflow: visible;
+					text-align: center;
+				}
+				.footer-row{
+					width: 100%;
+				}
+				`}
+			</style>
 		</div>
 	);
 };

@@ -93,8 +93,11 @@ export default class Hero extends Component {
 						</a>
 					</div>
 				</TitleRow>
-				<BackgroundBlob/>
-				<BackgroundBlob2/>
+				<div>
+					<BackgroundBlob/>
+					<BackgroundBlob2/>
+				</div>
+
 				<style jsx>
 					{`
 					.title{
@@ -127,6 +130,7 @@ export default class Hero extends Component {
 						width: 100%;
 					}
 					.component{
+						overflow: hidden;
 						display: flex;
 						position: relative;
 						left: 0%;

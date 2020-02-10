@@ -6,16 +6,9 @@ import { Container } from "../components/StyledComponents";
 import Feature from "./Feature/Feature";
 import Contact from "./Contact/Contact";
 import Team from "./Team/Team";
-import styled from "styled-components";
 import Footer from "../components/Footer";
 import _JSXStyle from "styled-jsx/style";
 import Wave from 'react-wavify';
-
-const { Content } = Layout;
-
-const Main = styled(Content)`
-	height: 1880px;
-`;
 
 const WaveBackground = () => (
 	<Wave fill='url(#gradient3)'
@@ -44,7 +37,7 @@ export default class Index extends React.Component {
 			<Head>
 				<title>NZSkillShare - Talents meet Curiosity</title>
 			</Head>
-			<Container className="container" id="container">
+			<div className="container" id="container">
 				<Header
 					leftColumn={<h4 style={{ fontSize: "16px", fontWeight: "bold" }}>NZSkillShare</h4>}
 					rightColumn={
@@ -53,7 +46,7 @@ export default class Index extends React.Component {
 						</a>
 					}
 				/>
-				<Main>
+				<div className="main">
 					<section name="section2" className="section">
 						<Hero />
 					</section >
@@ -65,12 +58,29 @@ export default class Index extends React.Component {
 					</section >
 					<section name="section4" className="section">
 						<Contact />
-						<WaveBackground/>
 						<Footer centerColumn={<h4 className="copy-rights">@NZSkillShare</h4>} />
+						<WaveBackground/>
 					</section >					
-				</Main>
+				</div>
 				<style jsx>
 					{`
+						.container{
+							margin: auto;
+							color: #000;
+							background-color: #fff;
+						}
+						@media min-width: 1440px {  
+							// -> "@media (min-width: 1024px)" -> "@media (min-width: 1024px)"
+							.container{
+								max-width: 800px;
+							}
+						 
+						}
+						@media main-width: 2560px {
+						  .container{
+							max-width: 1400px;
+						  }
+						}
 						a {
 							cursor: pointer;
 							text-decoration: none;
@@ -95,7 +105,7 @@ export default class Index extends React.Component {
 						}
 					`}
 				</style>
-			</Container>
+			</div>
 		</>
 		);
 	}
