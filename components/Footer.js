@@ -2,6 +2,10 @@ import { Layout, Row, Col } from "antd";
 import styled from "styled-components";
 import _JSXStyle from "styled-jsx/style";
 
+const FooterRow = styled(Row)`
+	width: 100%;
+`;
+
 const LeftCol = styled(Col)`
 	textalign: left;
 `;
@@ -21,13 +25,13 @@ export default ({ centerColumn, rightColumn, leftColumn }) => {
 	return (
 		<div className="footer-container">
 			<div theme="dark" className="footer">
-				<Row className="footer-row">
+				<FooterRow className="footer-row">
 					<LeftCol span={8}>{leftColumn}</LeftCol>
 					<CenterCol className="center-col" span={8}>
 						{centerColumn}
 					</CenterCol>
 					<RightCol span={8}>{rightColumn}</RightCol>
-				</Row>
+				</FooterRow>
 			</div>
 			<style jsx>{`
 				.footer-container{

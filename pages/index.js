@@ -101,7 +101,7 @@ export default class Index extends React.Component {
 							text-align: center;
 							font-weight: 600;
 							text-transform: uppercase;
-							color: #000;
+							color: #fff;
 						}
 					`}
 				</style>
