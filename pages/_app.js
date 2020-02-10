@@ -1,12 +1,12 @@
-import App from "next/app";
-import React from "react";
-import moment from "moment";
-import { ThemeProvider } from "styled-components";
-import theme from "../assets/theme";
-import GlobalStyle from "../assets/GlobalStyles";
-import { ParallaxProvider } from "react-scroll-parallax";
+import App from 'next/app';
+import React from 'react';
+import moment from 'moment';
+import { ThemeProvider } from 'styled-components';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import theme from '../assets/theme';
+import GlobalStyle from '../assets/GlobalStyles';
 
-moment.locale("en");
+moment.locale('en');
 
 export default class RootApp extends App {
 	static async getInitialProps({ Component, ctx }) {

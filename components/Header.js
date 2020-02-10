@@ -1,5 +1,5 @@
-import { Row, Col } from "antd";
-import styled from "styled-components";
+import { Row, Col } from 'antd';
+import styled from 'styled-components';
 
 const StyledHeader = styled.div`
 	margin-bottom: 10px;
@@ -52,7 +52,7 @@ const NavBar = styled(Row)`
 	padding-left: 12px;
 `;
 
-export default ({ centerColumn, rightColumn, leftColumn }) => {
+const Header = ({ centerColumn, rightColumn, leftColumn }) => {
 	return (
 		<StyledHeader theme="dark" className="navbar" mode="horizontal">
 			<NavBar>
@@ -63,3 +63,6 @@ export default ({ centerColumn, rightColumn, leftColumn }) => {
 		</StyledHeader>
 	);
 };
+
+Header.displayName = 'Header';
+export default Header;

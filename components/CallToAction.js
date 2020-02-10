@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import { Button } from "antd";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { Button } from 'antd';
 
 const CallToActionButton = styled(Button)`
 	background-color: #9800ff;
@@ -11,7 +11,7 @@ const CallToActionButton = styled(Button)`
 
 	&:hover {
 		background-color: #9800ff;
-		color:#fff;
+		color: #fff;
 		opacity: 0.6;
 	}
 `;

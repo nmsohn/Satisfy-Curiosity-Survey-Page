@@ -1,10 +1,8 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Row } from "antd";
-import styled from "styled-components";
-import Heading from "../components/Heading";
-import Paragraph from "../components/Paragraph";
-import _JSXStyle from "styled-jsx/style";
+import React, { Component } from 'react';
+import { Row } from 'antd';
+import Heading from './Heading';
+import Paragraph from './Paragraph';
+import _JSXStyle from 'styled-jsx/style';
 
 export default class Headline extends Component {
 	render() {
@@ -31,8 +29,8 @@ export default class Headline extends Component {
 							display: block;
 						}
 						.paragraph-container {
-							font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-								Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+							font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+								Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 							line-height: 26px;
 							font-weight: 300;
 							margin-top: 10px;
