@@ -6,173 +6,149 @@ import { KeyboardArrowDown } from "styled-icons/material/KeyboardArrowDown";
 import CallToAction from "../../components/CallToAction";
 
 const Section = styled.div`
-	 {
-		display: flex;
-		position: relative;
-		left: 0%;
-		top: 0%;
-		right: 0%;
-		bottom: auto;
-		z-index: 2;
-		min-height: 80vh;
-		align-items: center;
-		display: flex;
-		padding-right: 32px;
-		padding-left: 32px;
-		-webkit-box-align: center;
-		background-color: #fff;
-		color: #000;
-	}
+	display: flex;
+	position: relative;
+	left: 0%;
+	top: 0%;
+	right: 0%;
+	bottom: auto;
+	z-index: 2;
+	min-height: 80vh;
+	align-items: center;
+	display: flex;
+	padding-right: 32px;
+	padding-left: 32px;
+	-webkit-box-align: center;
+	background-color: #fff;
+	color: #000;
 `;
 
 const TitleRow = styled(Row)`
-	 {
-		width: 100%;
-	}
+	width: 100%;
 `;
 
 const TitleCol = styled(Col)`
-	 {
-		width: 100%;
-	}
+	width: 100%;
 `;
 
 const Title = styled.h2`
-	 {
-		display: block;
-		margin: 0 auto;
-		-webkit-box-pack: center;
-		-webkit-justify-content: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
-		-webkit-box-flex: 0;
-		-webkit-flex: 0 auto;
-		-ms-flex: 0 auto;
-		flex: 0 auto;
-		font-size: 5em;
-		text-transform: uppercase;
-		line-height: 80px;
-		font-weight: 300;
-		text-align: center;
-		color: #17ffa6;
-		font-family: "Anton";
-	}
+	display: block;
+	margin: 0 auto;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 auto;
+	-ms-flex: 0 auto;
+	flex: 0 auto;
+	font-size: 5em;
+	text-transform: uppercase;
+	line-height: 80px;
+	font-weight: 300;
+	text-align: center;
+	color: #17ffa6;
+	font-family: "Anton";
 `;
 
-const TopTitle = styled.span`
-	 {
-		color: #000;
-	}
-`;
+const TopTitle = styled.span`color: #000;`;
 
-const BottomTitle = styled.span`
-	 {
-		color: #000;
-	}
-`;
+const BottomTitle = styled.span`color: #000;`;
 
 const Sub = styled.p`
-	 {
-		color: #000;
-		display: block;
-		margin: 0 auto;
-		-webkit-box-pack: center;
-		-webkit-justify-content: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
-		-webkit-box-flex: 0;
-		-webkit-flex: 0 auto;
-		-ms-flex: 0 auto;
-		flex: 0 auto;
-		line-height: 80px;
-		font-weight: 300;
-		text-align: center;
-		font-size: 24px;
-	}
+	color: #000;
+	display: block;
+	margin: 0 auto;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 auto;
+	-ms-flex: 0 auto;
+	flex: 0 auto;
+	line-height: 80px;
+	font-weight: 300;
+	text-align: center;
+	font-size: 24px;
 `;
 
 const Arrow = styled(KeyboardArrowDown)`
-	 {
-		color: #000;
-		line-height: 80px;
-		font-weight: 300;
-		text-align: center;
-		display: block;
-		margin: 0 auto;
-		-webkit-box-pack: center;
-		-webkit-justify-content: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
-		-webkit-box-flex: 0;
-		-webkit-flex: 0 auto;
-		-ms-flex: 0 auto;
-		flex: 0 auto;
-		animation: anim 0.35s ease-in alternate infinite;
+	color: #000;
+	line-height: 80px;
+	font-weight: 300;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 auto;
+	-ms-flex: 0 auto;
+	flex: 0 auto;
+	animation: anim 0.35s ease-in alternate infinite;
 
-		@keyframes anim {
-			0% {
-				transform: translateY(0);
-			}
-			100% {
-				transform: translateY(10px);
-			}
+	@keyframes anim {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(10px);
 		}
 	}
 `;
 
 const Sub2 = styled.span`
-	 {
-		color: #000;
-		display: block;
-		margin: 0 auto;
-		-webkit-box-pack: center;
-		-webkit-justify-content: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
-		-webkit-box-flex: 0;
-		-webkit-flex: 0 auto;
-		-ms-flex: 0 auto;
-		flex: 0 auto;
-		font-weight: 300;
-		text-align: center;
-		font-size: 14px;
-	}
+	color: #000;
+	display: block;
+	margin: 0 auto;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 auto;
+	-ms-flex: 0 auto;
+	flex: 0 auto;
+	font-weight: 300;
+	text-align: center;
+	font-size: 14px;
 `;
 
 const SurveyButton = styled.div`
-	 {
-		display: block;
-		margin: 0 auto;
-		-webkit-box-pack: center;
-		-webkit-justify-content: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
-		-webkit-box-flex: 0;
-		-webkit-flex: 0 auto;
-		-ms-flex: 0 auto;
-		flex: 0 auto;
-		text-align: center;
-	}
+	display: block;
+	margin: 0 auto;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 auto;
+	-ms-flex: 0 auto;
+	flex: 0 auto;
+	text-align: center;
 `;
 
 export default class Hero extends Component {
@@ -187,7 +163,7 @@ export default class Hero extends Component {
 								options={{
 									loop: true
 								}}
-								onInit={typewriter => {
+								onInit={(typewriter) => {
 									typewriter
 										.typeString("Lessons")
 										.pauseFor(1500)
@@ -210,7 +186,7 @@ export default class Hero extends Component {
 					<Sub2>
 						<span>Before we launch our platform,</span>
 						<br />
-						<span>please take a survey to help us to improve our service</span>
+						<span>please take a survey to help us to improve our service🙌</span>
 					</Sub2>
 					<Arrow size={30} />
 					<SurveyButton>
