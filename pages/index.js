@@ -9,8 +9,9 @@ import Team from "./Team/Team";
 import { FullPage, Slide } from "react-full-page";
 import styled from "styled-components";
 import Footer from "../components/Footer";
-import GlobalStyle from "../assets/GlobalStyles";
 import _JSXStyle from "styled-jsx/style";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link, Element, animateScroll as scroll } from "react-scroll";
 
 const { Content } = Layout;
 
@@ -56,21 +57,20 @@ export default ({ data }) => (
 				`}
 			</style>
 			<Main>
-				<FullPage>
-					<Slide>
-						<Hero />
-					</Slide>
-					<Slide>
-						<Feature />
-					</Slide>
-					<Slide>
-						<Team />
-					</Slide>
-					<Slide>
-						<Contact />
-						<Footer centerColumn={<Menu>@NZSkillShare</Menu>} />
-					</Slide>
-				</FullPage>
+				<Element name="test1" className="element">
+					<Hero />
+				</Element>
+				<Element name="test2" className="element">
+					<Feature />
+				</Element>
+				<Element name="test3" className="element">
+					<Team />
+				</Element>
+				<Element name="test4" className="element">
+					<Contact />
+				</Element>
+
+				<Footer centerColumn={<Menu>@NZSkillShare</Menu>} />
 			</Main>
 		</Container>
 	</>

@@ -1,6 +1,7 @@
 import { Layout, Row, Col } from "antd";
 import styled from "styled-components";
 const Footer = Layout;
+import _JSXStyle from "styled-jsx/style";
 
 const StyledHeader = styled(Footer)`
 	 {

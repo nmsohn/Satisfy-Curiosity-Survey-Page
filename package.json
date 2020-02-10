@@ -38,6 +38,7 @@
     "react-helmet": "^5.2.1",
     "react-motion": "^0.5.2",
     "react-reveal": "^1.2.2",
+    "react-scroll": "^1.7.16",
     "react-scroll-parallax": "^2.3.1",
     "react-spring": "^8.0.27",
     "recursive-copy": "^2.0.10",

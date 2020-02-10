@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Section } from "../../components/StyledComponents";
+import _JSXStyle from "styled-jsx/style";
+// import { Section } from "../../components/StyledComponents";
 import Heading from "../../components/Heading";
 import { Row, Col } from "antd";
 import styled from "styled-components";
@@ -10,29 +11,25 @@ const title = "Contact Us";
 const content =
 	"While our team is working on building a platform, join our facebook group or contact us for more about our service!";
 const HeadLine = styled.div`
-	 {
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 940px;
-		position: static;
-		display: block;
-	}
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 940px;
+	position: static;
+	display: block;
 `;
 
 const ParagraphContainer = styled.div`
-	 {
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-			"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-		line-height: 26px;
-		font-weight: 300;
-		margin-top: 10px;
-	}
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	line-height: 26px;
+	font-weight: 300;
+	margin-top: 10px;
 `;
 
 export default class Contact extends Component {
 	render() {
 		return (
-			<Section className="section-contact component last-component">
+			<div className="section-contact component last-component">
 				<HeadLine>
 					<Heading title={title} />
 					<ParagraphContainer>
@@ -44,7 +41,28 @@ export default class Contact extends Component {
 						</Row>
 					</ParagraphContainer>
 				</HeadLine>
-			</Section>
+				<style jsx>
+					{`
+						.component {
+							display: flex;
+							position: relative;
+							left: 0%;
+							top: 0%;
+							right: 0%;
+							bottom: auto;
+							z-index: 2;
+							min-height: 80vh;
+							align-items: center;
+							display: flex;
+							padding-right: 32px;
+							padding-left: 32px;
+							-webkit-box-align: center;
+							background-color: #fff;
+							color: #000;
+						}
+					`}
+				</style>
+			</div>
 		);
 	}
 }

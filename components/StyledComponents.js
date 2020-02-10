@@ -18,19 +18,17 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.div`
-	 {
-		display: flex;
-		position: relative;
-		left: 0%;
-		top: 0%;
-		right: 0%;
-		bottom: auto;
-		z-index: 2;
-		display: flex;
-		padding-right: 32px;
-		padding-left: 32px;
-		background-color: #fff;
-		color: #000;
-		min-height: 80vh;
-	}
+	display: flex;
+	position: relative;
+	left: 0%;
+	top: 0%;
+	right: 0%;
+	bottom: auto;
+	z-index: 2;
+	display: flex;
+	padding-right: 32px;
+	padding-left: 32px;
+	background-color: #fff;
+	color: #000;
+	min-height: 80vh;
 `;

@@ -3,6 +3,7 @@ import { FacebookSquare } from "styled-icons/boxicons-logos/FacebookSquare";
 import { Mail } from "styled-icons/material/Mail";
 import styled from "styled-components";
 import { Col } from "antd";
+import _JSXStyle from "styled-jsx/style";
 
 const SocialCol = styled(Col)`
 	 {
@@ -20,25 +21,24 @@ const MailIcon = styled(Mail)`
 	padding-left: 5px;
 `;
 
-const IconContainer = styled.div`
-	 {
-		margin: 20px auto;
-		align-items: center;
-	}
-`;
-
 export default class SocialHandle extends Component {
 	render() {
 		return (
 			<SocialCol span={24}>
-				<IconContainer>
+				<div className="icon-container">
 					<a href="https://tinyurl.com/wellingtonskillshare" style={{ color: "#fff" }}>
 						<FacebookIcon size={38} />
 					</a>
 					<a href="mailto:skillsharenz@gmail.com" style={{ color: "#fff" }}>
 						<MailIcon size={40} />
 					</a>
-				</IconContainer>
+					<style jsx>
+						{`
+							margin: 20px auto;
+							align-items: center;
+						`}
+					</style>
+				</div>
 			</SocialCol>
 		);
 	}
