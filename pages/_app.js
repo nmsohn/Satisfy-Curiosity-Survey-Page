@@ -1,5 +1,4 @@
 import App from "next/app";
-import Head from "next/head";
 import React from "react";
 import moment from "moment";
 import { ThemeProvider } from "styled-components";
@@ -24,6 +23,7 @@ export default class RootApp extends App {
 			<>
 				<ThemeProvider theme={theme}>
 					<ParallaxProvider>
+						<GlobalStyle />
 						<Component {...pageProps} {...this.state} />
 					</ParallaxProvider>
 				</ThemeProvider>

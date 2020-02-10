@@ -4,10 +4,12 @@ import reset from "styled-reset";
 const GlobalStyle = createGlobalStyle`
 	${reset}
 	* {
-    box-sizing : border-box;
+    	box-sizing : border-box;
 	}
 	html {
 		background-color: #fff;
+		scrollbar-color: #495460 rgba(255, 255, 255, 0);
+		scrollbar-width: thin;
 	}
 	body {
 		margin: 0;
@@ -21,8 +23,6 @@ const GlobalStyle = createGlobalStyle`
 		-webkit-font-smoothing: antialiased;
 		font-family: system-ui, -apple-system, BlinkMacSystemFont, Oxygen, "Segoe UI", Roboto, Ubuntu, noto, Cantarell,
 		"Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-		scrollbar-color: #495460 rgba(255, 255, 255, 0);
-		scrollbar-width: thin;
 		background-color: #fff;
 	}
 `;

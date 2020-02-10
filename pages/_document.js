@@ -2,7 +2,6 @@ import React from "react";
 import Document, { NextScript, Main, Head } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 import GlobalStyle from "../assets/GlobalStyles";
-import flush from "styled-jsx/server";
 
 export default class MyDocument extends Document {
 	// static getInitialProps({ renderPage }) {
@@ -37,6 +36,7 @@ export default class MyDocument extends Document {
 			sheet.seal();
 		}
 	}
+
 	render() {
 		return (
 			<html lang="en">
@@ -56,9 +56,17 @@ export default class MyDocument extends Document {
 					/>
 					<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 					<link rel="shortcut icon" href="/public/favicon.ico" />
-					<link rel="stylesheet" type="text/css" href="/asset/custom" />
 					{this.props.styleTags}
 					<GlobalStyle />
+					<style>
+					{
+						`
+						html {
+							scrollbar-color: #495460 rgba(255, 255, 255, 0);
+							scrollbar-width: thin;
+						}`
+					}
+					</style>
 				</Head>
 				<body>
 					<Main />
