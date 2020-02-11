@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Wave from 'react-wavify';
+import { Layout } from 'antd';
 import _JSXStyle from 'styled-jsx/style';
 import Header from '../components/Header';
 import Hero from './Hero/Hero';
@@ -31,7 +32,7 @@ const WaveBackground = () => (
 
 export default function Index() {
 	return (
-		<>
+		<Layout>
 			<Head>
 				<title>NZSkillShare - Talents meet Curiosity</title>
 			</Head>
@@ -66,6 +67,9 @@ export default function Index() {
 							margin: auto;
 							color: #000;
 							background-color: #fff;
+							-webkit-box-sizing: border-box;
+							box-sizing: border-box;
+							min-width: 480px;
 						}
 						@media min-width: 1440px {
 							// -> "@media (min-width: 1024px)" -> "@media (min-width: 1024px)"
@@ -103,6 +107,6 @@ export default function Index() {
 					`}
 				</style>
 			</div>
-		</>
+		</Layout>
 	);
 }
