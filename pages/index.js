@@ -38,7 +38,7 @@ export default function Index() {
 			</Head>
 			<div className="container" id="container">
 				<Header
-					leftColumn={<h4 style={{ fontSize: '16px', fontWeight: 'bold' }}>NZSkillShare</h4>}
+					leftColumn={<h4 className="company-name">NZSkillShare</h4>}
 					rightColumn={
 						<a className="cta" href="https://tinyurl.com/nzskillshare2">
 							Take a survey
@@ -73,13 +73,17 @@ export default function Index() {
 							width: 100vw;
 							height: 100vh;
 						}
+						.company-name {
+							font-size: '16px';
+							font-weight: 'bold';
+						}
 						@media min-width: 1440px {
 							// -> "@media (min-width: 1024px)" -> "@media (min-width: 1024px)"
 							.container {
 								max-width: 800px;
 							}
 						}
-						@media main-width: 2560px {
+						@media min-width: 2560px {
 							.container {
 								max-width: 1400px;
 							}

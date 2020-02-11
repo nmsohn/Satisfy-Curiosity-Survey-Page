@@ -130,6 +130,13 @@ export default function Hero() {
 						color: #17ffa6;
 						font-family: 'Anton';
 					}
+					@media (max-width: 480px) {
+						.title {
+							font-size: 62px;
+							line-height: 62px;
+							margin-top: 30px;
+						}
+					}
 					.title-row {
 						width: 100%;
 					}
@@ -189,6 +196,21 @@ export default function Hero() {
 						font-weight: 300;
 						text-align: center;
 						font-size: 24px;
+					}
+					@media (max-width: 480px) {
+						.sub {
+							line-height: 30px;
+						}
+						.sub {
+							margin-top: 20px;
+						}
+						.arrow-down {
+							line-height: 30px;
+							margin: 0 auto;
+						}
+						.survey-button {
+							margin-bottom: 15px;
+						}
 					}
 					.sub2 {
 						color: #000;

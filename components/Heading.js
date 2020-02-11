@@ -46,8 +46,8 @@ export default class Heading extends Component {
 								margin-top: 50px;
 							}
 							h2 {
-								font-size: 68px;
-								line-height: 56px;
+								font-size: 50px;
+								line-height: 50px;
 							}
 						}
 					`}
