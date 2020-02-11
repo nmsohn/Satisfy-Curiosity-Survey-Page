@@ -70,6 +70,8 @@ export default function Index() {
 							-webkit-box-sizing: border-box;
 							box-sizing: border-box;
 							min-width: 480px;
+							width: 100vw;
+							height: 100vh;
 						}
 						@media min-width: 1440px {
 							// -> "@media (min-width: 1024px)" -> "@media (min-width: 1024px)"

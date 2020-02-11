@@ -2,6 +2,8 @@ import { Row, Col } from 'antd';
 import styled from 'styled-components';
 
 const StyledHeader = styled.div`
+	width: 100%;
+	min-width: 480px;
 	margin-bottom: 10px;
 	position: -webkit-sticky;
 	position: sticky;
@@ -50,15 +52,16 @@ const NavBar = styled(Row)`
 	padding-top: 0px;
 	padding-right: 12px;
 	padding-left: 12px;
+	margin: 0 auto;
 `;
 
 const Header = ({ centerColumn, rightColumn, leftColumn }) => {
 	return (
 		<StyledHeader theme="dark" className="navbar" mode="horizontal">
 			<NavBar>
-				<LeftCol span={6}>{leftColumn}</LeftCol>
-				<CenterCol span={12}>{centerColumn}</CenterCol>
-				<RightCol span={6}>{rightColumn}</RightCol>
+				<LeftCol span={9}>{leftColumn}</LeftCol>
+				<CenterCol span={6}>{centerColumn}</CenterCol>
+				<RightCol span={9}>{rightColumn}</RightCol>
 			</NavBar>
 		</StyledHeader>
 	);
