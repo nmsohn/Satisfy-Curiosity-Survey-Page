@@ -6,14 +6,6 @@ const FooterRow = styled(Row)`
 	width: 100%;
 `;
 
-const LeftCol = styled(Col)`
-	textalign: left;
-`;
-
-const RightCol = styled(Col)`
-	textalign: right;
-`;
-
 const CenterCol = styled(Col)`
 	text-align: center;
 	font-weight: 600;
@@ -21,16 +13,14 @@ const CenterCol = styled(Col)`
 	color: #000;
 `;
 
-const Footer = ({ centerColumn, rightColumn, leftColumn }) => {
+const Footer = ({ centerColumn }) => {
 	return (
 		<div className="footer-container">
 			<div theme="dark" className="footer">
 				<FooterRow className="footer-row">
-					<LeftCol span={8}>{leftColumn}</LeftCol>
-					<CenterCol className="center-col" span={8}>
+					<CenterCol className="center-col" span={24}>
 						{centerColumn}
 					</CenterCol>
-					<RightCol span={8}>{rightColumn}</RightCol>
 				</FooterRow>
 			</div>
 			<style jsx>

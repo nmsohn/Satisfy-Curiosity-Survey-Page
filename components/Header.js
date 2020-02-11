@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.div`
 	width: 100%;
-	min-width: 480px;
 	margin-bottom: 10px;
 	position: -webkit-sticky;
 	position: sticky;
@@ -25,15 +24,6 @@ const LeftCol = styled(Col)`
 	transform: translateY(-50%);
 	font-size: 20px;
 	font-weight: bold;
-`;
-
-const CenterCol = styled(Col)`
-	text-align: center;
-	font-weight: 600;
-	text-transform: uppercase;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
 `;
 
 const RightCol = styled(Col)`
@@ -59,9 +49,8 @@ const Header = ({ centerColumn, rightColumn, leftColumn }) => {
 	return (
 		<StyledHeader theme="dark" className="navbar" mode="horizontal">
 			<NavBar>
-				<LeftCol span={9}>{leftColumn}</LeftCol>
-				<CenterCol span={6}>{centerColumn}</CenterCol>
-				<RightCol span={9}>{rightColumn}</RightCol>
+				<LeftCol span={12}>{leftColumn}</LeftCol>
+				<RightCol span={12}>{rightColumn}</RightCol>
 			</NavBar>
 		</StyledHeader>
 	);

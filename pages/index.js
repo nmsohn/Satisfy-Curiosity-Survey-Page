@@ -69,7 +69,7 @@ export default function Index() {
 							background-color: #fff;
 							-webkit-box-sizing: border-box;
 							box-sizing: border-box;
-							min-width: 480px;
+							min-width: 320px;
 							width: 100vw;
 							height: 100vh;
 						}
