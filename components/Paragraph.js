@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import { Col } from 'antd';
-import _JSXStyle from 'styled-jsx/style';
+import React, { Component } from "react";
+import { Col } from "antd";
+import _JSXStyle from "styled-jsx/style";
 
 export default class Paragraph extends Component {
 	render() {
 		const paragraph = this.props.paragraph;
 		return (
 			<Col xs={24} sm={24} md={24} lg={12} xl={12}>
-				<p
+				<div
 					className="description"
 					data-aos="fade-up"
 					data-aos-offset="200"
@@ -17,7 +17,7 @@ export default class Paragraph extends Component {
 					data-aos-once="false"
 				>
 					{paragraph}
-				</p>
+				</div>
 				<style jsx>
 					{`
 						margin-top: 24px;

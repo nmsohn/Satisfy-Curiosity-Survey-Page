@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
 					/>
 					<meta name="description" content="NZSkillShare" />
 					<meta name="keywords" content="jobs, nz, private lessons, hobbies, gig economy, classes" />
-					<link rel="manifest" href="../public/manifest.json" />
+					<link rel="manifest" href="/manifest.json" />
 					<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
 					<link
 						rel="stylesheet"

@@ -1,13 +1,13 @@
-import Head from 'next/head';
-import Wave from 'react-wavify';
-import { Layout } from 'antd';
-import _JSXStyle from 'styled-jsx/style';
-import Header from '../components/Header';
-import Hero from './Hero/Hero';
-import Feature from './Feature/Feature';
-import Contact from './Contact/Contact';
-import Team from './Team/Team';
-import Footer from '../components/Footer';
+import Head from "next/head";
+import Wave from "react-wavify";
+import { Layout } from "antd";
+import _JSXStyle from "styled-jsx/style";
+import Header from "../components/Header";
+import Hero from "./Hero/Hero";
+import Feature from "./Feature/Feature";
+import Contact from "./Contact/Contact";
+import Team from "./Team/Team";
+import Footer from "../components/Footer";
 
 const WaveBackground = () => (
 	<Wave
