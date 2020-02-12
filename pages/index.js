@@ -71,7 +71,6 @@ export default function Index() {
 							box-sizing: border-box;
 							min-width: 320px;
 							width: 100vw;
-							height: 100vh;
 						}
 						.company-name {
 							font-size: '16px';
