@@ -1,17 +1,9 @@
-import React from "react";
-import Document, { NextScript, Main, Head } from "next/document";
-import { ServerStyleSheet } from "styled-components";
-import GlobalStyle from "../assets/GlobalStyles";
+import React from 'react';
+import Document, { NextScript, Main, Head } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
+import GlobalStyle from '../assets/GlobalStyles';
 
 export default class MyDocument extends Document {
-	// static getInitialProps({ renderPage }) {
-	// 	const sheet = new ServerStyleSheet();
-	// 	// Retrieve styles from components in the page
-	// 	const page = renderPage(App => props => sheet.collectStyles(<App {...props} />));
-	// 	// Extract the styles as <style> tags. Output the styles in the <Head>
-	// 	const styleTags = sheet.getStyleElement();
-	// 	return { ...page, styleTags };
-	// }
 	static async getInitialProps(ctx) {
 		const sheet = new ServerStyleSheet();
 		const originalRenderPage = ctx.renderPage;
@@ -59,13 +51,11 @@ export default class MyDocument extends Document {
 					{this.props.styleTags}
 					<GlobalStyle />
 					<style>
-					{
-						`
+						{`
 						html {
 							scrollbar-color: #495460 rgba(255, 255, 255, 0);
 							scrollbar-width: thin;
-						}`
-					}
+						}`}
 					</style>
 				</Head>
 				<body>

@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import { FacebookSquare } from "styled-icons/boxicons-logos/FacebookSquare";
-import { Mail } from "styled-icons/material/Mail";
-import styled from "styled-components";
-import { Col } from "antd";
-import _JSXStyle from "styled-jsx/style";
+import React from 'react';
+import { FacebookSquare } from 'styled-icons/boxicons-logos/FacebookSquare';
+import { Mail } from 'styled-icons/material/Mail';
+import styled from 'styled-components';
+import { Col } from 'antd';
+import _JSXStyle from 'styled-jsx/style';
 
 const SocialCol = styled(Col)`
 	 {
@@ -13,37 +13,35 @@ const SocialCol = styled(Col)`
 `;
 
 const FacebookIcon = styled(FacebookSquare)`
-	color: "#000";
+	color: '#000';
 `;
 
 const MailIcon = styled(Mail)`
-	color: "#000";
+	color: '#000';
 	padding-left: 5px;
 `;
 
-export default class SocialHandle extends Component {
-	render() {
-		return (
-			<SocialCol span={24}>
-				<div className="icon-container">
-					<a href="https://tinyurl.com/wellingtonskillshare" style={{ color: "#000" }}>
-						<FacebookIcon size={38} />
-					</a>
-					<a href="mailto:skillsharenz@gmail.com" style={{ color: "#000" }}>
-						<MailIcon size={40} />
-					</a>
-					<style jsx>
-						{`
-						.icon-container{
+export default function SocialHandle() {
+	return (
+		<SocialCol span={24}>
+			<div className="icon-container">
+				<a href="https://tinyurl.com/wellingtonskillshare" style={{ color: '#000' }}>
+					<FacebookIcon size={38} />
+				</a>
+				<a href="mailto:skillsharenz@gmail.com" style={{ color: '#000' }}>
+					<MailIcon size={40} />
+				</a>
+				<style jsx>
+					{`
+						.icon-container {
 							margin: 20px auto;
 							align-items: center;
 							text-align: center;
 							margin: 0 auto;
 						}
-						`}
-					</style>
-				</div>
-			</SocialCol>
-		);
-	}
+					`}
+				</style>
+			</div>
+		</SocialCol>
+	);
 }

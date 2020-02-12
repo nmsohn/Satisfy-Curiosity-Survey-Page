@@ -1,38 +1,26 @@
 const colors = {
 	primary: {
-		blue: "#0070f3",
-		white: "#0070f3",
-		black: "#0F0E19",
-		gray: "#495460",
-		white: "#fff"
+		blue: '#0070f3',
+		white: '#fff',
+		black: '#0F0E19',
+		gray: '#495460'
 	},
 	sceondary: {
-		black: "#484754"
+		black: '#484754'
 	}
 };
 
-const fontSizes = [
-	"1.2rem",
-	"1.4rem",
-	"1.6rem",
-	"1.8rem",
-	"2.4rem",
-	"2.8rem",
-	"3.2rem",
-	"4.0rem",
-	"4.8rem",
-	"6.4rem"
-];
-const space = [ "0", ".4rem", ".8rem", "1.2rem", "1.6rem", "2.0rem", "3.2rem", "4.8rem", "6.4rem", "9.6rem" ];
+const fontSizes = ['1.2rem', '1.4rem', '1.6rem', '1.8rem', '2.4rem', '2.8rem', '3.2rem', '4.0rem', '4.8rem', '6.4rem'];
+const space = ['0', '.4rem', '.8rem', '1.2rem', '1.6rem', '2.0rem', '3.2rem', '4.8rem', '6.4rem', '9.6rem'];
 
 const mediaSizes = {
-	mobileS: "320px",
-	mobileM: "375px",
-	mobileL: "425px",
-	tablet: "768px",
-	laptop: "1024px",
-	laptopL: "1440px",
-	desktop: "2560px"
+	mobileS: '320px',
+	mobileM: '375px',
+	mobileL: '425px',
+	tablet: '768px',
+	laptop: '1024px',
+	laptopL: '1440px',
+	desktop: '2560px'
 };
 
 const device = {
