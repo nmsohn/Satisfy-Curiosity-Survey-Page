@@ -39,6 +39,11 @@ export default function SocialHandle() {
 							text-align: center;
 							margin: 0 auto;
 						}
+						@media (max-width: 480px) {
+							.icon-container {
+								margin-top: 40px;
+							}
+						}
 					`}
 				</style>
 			</div>

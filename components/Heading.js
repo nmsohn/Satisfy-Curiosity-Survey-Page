@@ -41,6 +41,15 @@ export default class Heading extends Component {
 							text-align: left;
 							text-decoration: none;
 						}
+						@media (max-width: 480px) {
+							.headline {
+								margin-top: 50px;
+							}
+							h2 {
+								font-size: 50px;
+								line-height: 50px;
+							}
+						}
 					`}
 				</style>
 			</div>

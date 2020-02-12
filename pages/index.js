@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Wave from 'react-wavify';
+import { Layout } from 'antd';
 import _JSXStyle from 'styled-jsx/style';
 import Header from '../components/Header';
 import Hero from './Hero/Hero';
@@ -31,13 +32,13 @@ const WaveBackground = () => (
 
 export default function Index() {
 	return (
-		<>
+		<Layout>
 			<Head>
 				<title>NZSkillShare - Talents meet Curiosity</title>
 			</Head>
 			<div className="container" id="container">
 				<Header
-					leftColumn={<h4 style={{ fontSize: '16px', fontWeight: 'bold' }}>NZSkillShare</h4>}
+					leftColumn={<h4 className="company-name">NZSkillShare</h4>}
 					rightColumn={
 						<a className="cta" href="https://tinyurl.com/nzskillshare2">
 							Take a survey
@@ -66,6 +67,15 @@ export default function Index() {
 							margin: auto;
 							color: #000;
 							background-color: #fff;
+							-webkit-box-sizing: border-box;
+							box-sizing: border-box;
+							min-width: 320px;
+							width: 100vw;
+							height: 100vh;
+						}
+						.company-name {
+							font-size: '16px';
+							font-weight: 'bold';
 						}
 						@media min-width: 1440px {
 							// -> "@media (min-width: 1024px)" -> "@media (min-width: 1024px)"
@@ -73,7 +83,7 @@ export default function Index() {
 								max-width: 800px;
 							}
 						}
-						@media main-width: 2560px {
+						@media min-width: 2560px {
 							.container {
 								max-width: 1400px;
 							}
@@ -103,6 +113,6 @@ export default function Index() {
 					`}
 				</style>
 			</div>
-		</>
+		</Layout>
 	);
 }
