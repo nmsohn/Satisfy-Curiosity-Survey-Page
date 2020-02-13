@@ -16,8 +16,6 @@ const CallToActionButton = styled(Button)`
 	}
 `;
 
-export default class CallToAction extends Component {
-	render() {
-		return <CallToActionButton size="large">Join us now</CallToActionButton>;
-	}
+export default function CallToAction() {
+	return <CallToActionButton size="large">Join us now</CallToActionButton>;
 }

@@ -53,57 +53,55 @@ const BackgroundBlob2 = ({ style, props }) => (
 	/>
 );
 
-export default class Hero extends Component {
-	render() {
-		return (
-			<div className="section-hero component first-component">
-				<TitleRow className="title-row">
-					<TitleCol span={24} className="title-col">
-						<h2 className="title">
-							<span style={{color:"#000"}}>Discover Local</span>
-							<Typewriter
-								options={{
-									loop: true
-								}}
-								onInit={(typewriter) => {
-									typewriter
-										.typeString("Lessons")
-										.pauseFor(1500)
-										.deleteAll()
-										.typeString("Classes")
-										.pauseFor(1500)
-										.deleteAll()
-										.typeString("Events")
-										.pauseFor(1500)
-										.deleteAll()
-										.typeString("Workshops")
-										.pauseFor(1500)
-										.start();
-								}}
-							/>
-							<span style={{color:"#000"}}>Today!</span>
-						</h2>
-					</TitleCol>
-					<p className="sub">Find a new hobby or build up your skills with us!</p>
-					<span className="sub2">
-						<span>Before we launch our platform,</span>
-						<br />
-						<span>please take a <a className="highlight">survey</a> to help us to improve our service 🙌</span>
-						<br/>
-						<span>Also don't forget to join our Facebook group</span>
-						<br/>
-						<span>and share your skills or learn new skills</span>
+export default function Hero() {
+	return (
+		<div className="section-hero component first-component">
+			<TitleRow className="title-row">
+				<TitleCol span={24} className="title-col">
+					<h2 className="title">
+						<span style={{ color: '#000' }}>Discover Local</span>
+						<Typewriter
+							options={{
+								loop: true
+							}}
+							onInit={typewriter => {
+								typewriter
+									.typeString('Lessons')
+									.pauseFor(1500)
+									.deleteAll()
+									.typeString('Classes')
+									.pauseFor(1500)
+									.deleteAll()
+									.typeString('Events')
+									.pauseFor(1500)
+									.deleteAll()
+									.typeString('Workshops')
+									.pauseFor(1500)
+									.start();
+							}}
+						/>
+						<span style={{ color: '#000' }}>Today!</span>
+					</h2>
+				</TitleCol>
+				<p className="sub">Find a new hobby or build up your skills with us!</p>
+				<span className="sub2">
+					<span>Before we launch our platform,</span>
+					<br />
+					<span>
+						please take a <a className="highlight">survey</a> to help us to improve our service 🙌
 					</span>
-					<p className="arrow-down"><KeyboardArrowDown size={30} /></p>
-					<div className="survey-button">
-						<a className="cta-survey" href="https://tinyurl.com/wellingtonskillshare">
-							<CallToAction />
-						</a>
-					</div>
-				</TitleRow>
-				<div>
-					<BackgroundBlob/>
-					<BackgroundBlob2/>
+					<br />
+					<span>Also don't forget to join our group</span>
+					<br />
+					<span>and meet our community!</span>
+				</span>
+				<p className="arrow-down">
+					<KeyboardArrowDown size={30} />
+				</p>
+				<div className="survey-button">
+					<a className="cta-survey" href="https://tinyurl.com/wellingtonskillshare">
+						<CallToAction />
+					</a>
 				</div>
 			</TitleRow>
 			<div>
