@@ -85,10 +85,14 @@ export default class Hero extends Component {
 						<span>Before we launch our platform,</span>
 						<br />
 						<span>please take a <a className="highlight">survey</a> to help us to improve our service 🙌</span>
+						<br/>
+						<span>Also don't forget to join our Facebook group</span>
+						<br/>
+						<span>and share your skills or learn new skills</span>
 					</span>
 					<p className="arrow-down"><KeyboardArrowDown size={30} /></p>
 					<div className="survey-button">
-						<a className="cta-survey" href="https://tinyurl.com/nzskillshare2">
+						<a className="cta-survey" href="https://tinyurl.com/wellingtonskillshare">
 							<CallToAction />
 						</a>
 					</div>

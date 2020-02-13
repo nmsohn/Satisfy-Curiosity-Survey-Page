@@ -18,6 +18,6 @@ const CallToActionButton = styled(Button)`
 
 export default class CallToAction extends Component {
 	render() {
-		return <CallToActionButton size="large">Take a Survey</CallToActionButton>;
+		return <CallToActionButton size="large">Join us now</CallToActionButton>;
 	}
 }
