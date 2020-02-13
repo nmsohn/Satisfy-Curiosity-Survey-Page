@@ -1,25 +1,25 @@
 import Head from "next/head";
+import Wave from "react-wavify";
 import { Layout } from "antd";
+import _JSXStyle from "styled-jsx/style";
 import Header from "../components/Header";
 import Hero from "./Hero/Hero";
-import { Container } from "../components/StyledComponents";
 import Feature from "./Feature/Feature";
 import Contact from "./Contact/Contact";
 import Team from "./Team/Team";
 import Footer from "../components/Footer";
-import _JSXStyle from "styled-jsx/style";
-import Wave from 'react-wavify';
 
 const WaveBackground = () => (
-	<Wave fill='url(#gradient3)'
-			paused={false}
-			opacity={0.4}
-			options={{
+	<Wave
+		fill="url(#gradient3)"
+		paused={false}
+		opacity={0.4}
+		options={{
 			height: 1,
 			amplitude: 40,
 			speed: 0.15,
 			points: 3
-			}}
+		}}
 	>
 		<defs>
 			<linearGradient id="gradient3" gradientTransform="rotate(120)">
@@ -28,18 +28,17 @@ const WaveBackground = () => (
 			</linearGradient>
 		</defs>
 	</Wave>
-	);
+);
 
-export default class Index extends React.Component {
-	render() {
-		return(
-			<>
+export default function Index() {
+	return (
+		<Layout>
 			<Head>
 				<title>NZSkillShare - Talents meet Curiosity</title>
 			</Head>
 			<div className="container" id="container">
 				<Header
-					leftColumn={<h4 style={{ fontSize: "16px", fontWeight: "bold" }}>NZSkillShare</h4>}
+					leftColumn={<h4 className="company-name">NZSkillShare</h4>}
 					rightColumn={
 						<a className="cta" href="https://tinyurl.com/nzskillshare2">
 							Take a survey
@@ -49,37 +48,44 @@ export default class Index extends React.Component {
 				<div className="main">
 					<section name="section2" className="section">
 						<Hero />
-					</section >
+					</section>
 					<section name="section2" className="section">
 						<Feature />
-					</section >		
+					</section>
 					<section name="section3" className="section">
 						<Team />
-					</section >
+					</section>
 					<section name="section4" className="section">
 						<Contact />
 						<Footer centerColumn={<h4 className="copy-rights">@NZSkillShare</h4>} />
-						<WaveBackground/>
-					</section >					
+						<WaveBackground />
+					</section>
 				</div>
 				<style jsx>
 					{`
-						.container{
+						.container {
 							margin: auto;
 							color: #000;
 							background-color: #fff;
+							-webkit-box-sizing: border-box;
+							box-sizing: border-box;
+							min-width: 320px;
+							width: 100vw;
 						}
-						@media min-width: 1440px {  
+						.company-name {
+							font-size: '16px';
+							font-weight: 'bold';
+						}
+						@media min-width: 1440px {
 							// -> "@media (min-width: 1024px)" -> "@media (min-width: 1024px)"
-							.container{
+							.container {
 								max-width: 800px;
 							}
-						 
 						}
-						@media main-width: 2560px {
-						  .container{
-							max-width: 1400px;
-						  }
+						@media min-width: 2560px {
+							.container {
+								max-width: 1400px;
+							}
 						}
 						a {
 							cursor: pointer;
@@ -106,7 +112,6 @@ export default class Index extends React.Component {
 					`}
 				</style>
 			</div>
-		</>
-		);
-	}
+		</Layout>
+	);
 }

@@ -1,7 +1,8 @@
-import { Row, Col } from "antd";
-import styled from "styled-components";
+import { Row, Col } from 'antd';
+import styled from 'styled-components';
 
 const StyledHeader = styled.div`
+	width: 100%;
 	margin-bottom: 10px;
 	position: -webkit-sticky;
 	position: sticky;
@@ -25,15 +26,6 @@ const LeftCol = styled(Col)`
 	font-weight: bold;
 `;
 
-const CenterCol = styled(Col)`
-	text-align: center;
-	font-weight: 600;
-	text-transform: uppercase;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-`;
-
 const RightCol = styled(Col)`
 	text-align: right;
 	top: 50%;
@@ -50,16 +42,19 @@ const NavBar = styled(Row)`
 	padding-top: 0px;
 	padding-right: 12px;
 	padding-left: 12px;
+	margin: 0 auto;
 `;
 
-export default ({ centerColumn, rightColumn, leftColumn }) => {
+const Header = ({ centerColumn, rightColumn, leftColumn }) => {
 	return (
 		<StyledHeader theme="dark" className="navbar" mode="horizontal">
 			<NavBar>
-				<LeftCol span={6}>{leftColumn}</LeftCol>
-				<CenterCol span={12}>{centerColumn}</CenterCol>
-				<RightCol span={6}>{rightColumn}</RightCol>
+				<LeftCol span={12}>{leftColumn}</LeftCol>
+				<RightCol span={12}>{rightColumn}</RightCol>
 			</NavBar>
 		</StyledHeader>
 	);
 };
+
+Header.displayName = 'Header';
+export default Header;

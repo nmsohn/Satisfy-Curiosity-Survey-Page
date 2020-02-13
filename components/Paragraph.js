@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 import { Col } from "antd";
 import _JSXStyle from "styled-jsx/style";
 
@@ -8,7 +7,7 @@ export default class Paragraph extends Component {
 		const paragraph = this.props.paragraph;
 		return (
 			<Col xs={24} sm={24} md={24} lg={12} xl={12}>
-				<p
+				<div
 					className="description"
 					data-aos="fade-up"
 					data-aos-offset="200"
@@ -18,7 +17,7 @@ export default class Paragraph extends Component {
 					data-aos-once="false"
 				>
 					{paragraph}
-				</p>
+				</div>
 				<style jsx>
 					{`
 						margin-top: 24px;
@@ -26,8 +25,8 @@ export default class Paragraph extends Component {
 						margin-right: 10px;
 						padding-right: 24px;
 						padding-left: 0px;
-						font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-							Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+						font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+							Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 						color: #000;
 						font-size: 19px;
 						font-weight: 300;

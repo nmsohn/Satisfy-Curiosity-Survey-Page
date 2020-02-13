@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import Typewriter from "typewriter-effect";
-import styled from "styled-components";
-import { Row, Col } from "antd";
-import { KeyboardArrowDown } from "styled-icons/material/KeyboardArrowDown";
-import CallToAction from "../../components/CallToAction";
+import React from 'react';
+import Typewriter from 'typewriter-effect';
+import styled from 'styled-components';
+import { Row, Col } from 'antd';
+import { KeyboardArrowDown } from 'styled-icons/material/KeyboardArrowDown';
 import { Blob } from 'react-blob';
-import _JSXStyle from "styled-jsx/style";
+import _JSXStyle from 'styled-jsx/style';
+import CallToAction from '../../components/CallToAction';
 
 const TitleRow = styled(Row)`
 	width: 100%;
@@ -15,39 +15,43 @@ const TitleCol = styled(Col)`
 	width: 100%;
 `;
 
-const BackgroundBlob = ({style, props}) =>
-  <Blob size="80vh"
-    style={{
-        position: 'absolute',
-        top: '-30%',
-        right: '-15%',
-		zIndex: -1,
-		// backgroundImage: "linear-gradient(to right, #4F41B8, #03A7C1)"
-        backgroundImage: 'linear-gradient(135deg, #4F41B8 30%, #03A7C1 90%)',
-        color: 'white',
-        opacity: 0.2,
-        fontSize: '50vh',
-        ...style
-    }}
-    {...props}
-  />
+const BackgroundBlob = ({ style, props }) => (
+	<Blob
+		size="80vh"
+		style={{
+			position: 'absolute',
+			top: '-30%',
+			right: '-15%',
+			zIndex: -1,
+			// backgroundImage: "linear-gradient(to right, #4F41B8, #03A7C1)"
+			backgroundImage: 'linear-gradient(135deg, #4F41B8 30%, #03A7C1 90%)',
+			color: 'white',
+			opacity: 0.2,
+			fontSize: '50vh',
+			...style
+		}}
+		{...props}
+	/>
+);
 
-  const BackgroundBlob2 = ({style, props}) =>
-  <Blob size="60vh"
-    style={{
-        position: 'absolute',
-        bottom: '-30%',
-        left: '-15%',
-		zIndex: -1,
-		// backgroundImage: "linear-gradient(to right, #4F41B8, #03A7C1)"
-        backgroundImage: 'linear-gradient(135deg, #f79d00 30%, #64f38c 90%)',
-        color: 'white',
-        opacity: 0.2,
-        fontSize: '50vh',
-        ...style
-    }}
-    {...props}
-  />
+const BackgroundBlob2 = ({ style, props }) => (
+	<Blob
+		size="60vh"
+		style={{
+			position: 'absolute',
+			bottom: '-30%',
+			left: '-15%',
+			zIndex: -1,
+			// backgroundImage: "linear-gradient(to right, #4F41B8, #03A7C1)"
+			backgroundImage: 'linear-gradient(135deg, #f79d00 30%, #64f38c 90%)',
+			color: 'white',
+			opacity: 0.2,
+			fontSize: '50vh',
+			...style
+		}}
+		{...props}
+	/>
+);
 
 export default class Hero extends Component {
 	render() {
@@ -101,10 +105,15 @@ export default class Hero extends Component {
 					<BackgroundBlob/>
 					<BackgroundBlob2/>
 				</div>
+			</TitleRow>
+			<div>
+				<BackgroundBlob />
+				<BackgroundBlob2 />
+			</div>
 
-				<style jsx>
-					{`
-					.title{
+			<style jsx>
+				{`
+					.title {
 						display: block;
 						margin: 0 auto;
 						-webkit-box-pack: center;
@@ -125,15 +134,22 @@ export default class Hero extends Component {
 						font-weight: 300;
 						text-align: center;
 						color: #17ffa6;
-						font-family: "Anton";
+						font-family: 'Anton';
 					}
-					.title-row{
+					@media (max-width: 480px) {
+						.title {
+							font-size: 62px;
+							line-height: 62px;
+							margin-top: 30px;
+						}
+					}
+					.title-row {
 						width: 100%;
 					}
-					.title-col{
+					.title-col {
 						width: 100%;
 					}
-					.component{
+					.component {
 						overflow: hidden;
 						display: flex;
 						position: relative;
@@ -166,7 +182,7 @@ export default class Hero extends Component {
 						background-size: 100% 88%;
 						color: white;
 					}
-					.sub{
+					.sub {
 						color: #000;
 						display: block;
 						margin: 0 auto;
@@ -187,7 +203,22 @@ export default class Hero extends Component {
 						text-align: center;
 						font-size: 24px;
 					}
-					.sub2{
+					@media (max-width: 480px) {
+						.sub {
+							line-height: 30px;
+						}
+						.sub {
+							margin-top: 20px;
+						}
+						.arrow-down {
+							line-height: 30px;
+							margin: 0 auto;
+						}
+						.survey-button {
+							margin-bottom: 15px;
+						}
+					}
+					.sub2 {
 						color: #000;
 						display: block;
 						margin: 0 auto;
@@ -207,7 +238,7 @@ export default class Hero extends Component {
 						text-align: center;
 						font-size: 16px;
 					}
-					.survey-button{
+					.survey-button {
 						display: block;
 						margin: 0 auto;
 						-webkit-box-pack: center;
@@ -224,7 +255,7 @@ export default class Hero extends Component {
 						flex: 0 auto;
 						text-align: center;
 					}
-					.arrow-down{
+					.arrow-down {
 						color: #000;
 						line-height: 80px;
 						font-weight: 300;
@@ -244,7 +275,7 @@ export default class Hero extends Component {
 						-ms-flex: 0 auto;
 						flex: 0 auto;
 						animation: anim 0.35s ease-in alternate infinite;
-					
+
 						@keyframes anim {
 							0% {
 								transform: translateY(0);
@@ -254,9 +285,8 @@ export default class Hero extends Component {
 							}
 						}
 					}
-					`}
-				</style>
-			</div>
-		);
-	}
+				`}
+			</style>
+		</div>
+	);
 }

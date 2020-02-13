@@ -1,8 +1,5 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Row, Col } from "antd";
-import styled from "styled-components";
-import _JSXStyle from "styled-jsx/style";
+import React, { Component } from 'react';
+import _JSXStyle from 'styled-jsx/style';
 
 export default class Heading extends Component {
 	render() {
@@ -23,8 +20,8 @@ export default class Heading extends Component {
 				</h2>
 				<style jsx>
 					{`
-						.headline{
-							margin-bottom:20px;
+						.headline {
+							margin-bottom: 20px;
 						}
 						h2 {
 							position: static;
@@ -42,7 +39,16 @@ export default class Heading extends Component {
 							line-height: 86px;
 							font-weight: 300;
 							text-align: left;
-							text-decoration: none;	
+							text-decoration: none;
+						}
+						@media (max-width: 480px) {
+							.headline {
+								margin-top: 50px;
+							}
+							h2 {
+								font-size: 50px;
+								line-height: 50px;
+							}
 						}
 					`}
 				</style>
