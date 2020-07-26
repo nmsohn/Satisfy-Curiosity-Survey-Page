@@ -12,7 +12,7 @@ As a ___, I want to ____ so that I can ____
 
 
 ### Acceptance Criteria
-- [ ] 
+
 
 ### Comments
 >
